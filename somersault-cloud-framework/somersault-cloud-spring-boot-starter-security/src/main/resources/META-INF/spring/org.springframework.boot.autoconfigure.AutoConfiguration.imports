@@ -1,0 +1,3 @@
+xyz.entdiy.somersault.framework.security.config.CloudSecurityRpcAutoConfiguration
+xyz.entdiy.somersault.framework.security.config.CloudSecurityAutoConfiguration
+xyz.entdiy.somersault.framework.security.config.CloudWebSecurityConfigurerAdapter

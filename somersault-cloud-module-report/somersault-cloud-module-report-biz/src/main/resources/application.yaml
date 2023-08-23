@@ -1,0 +1,47 @@
+spring:
+  profiles:
+    include: module
+
+--- #################### 数据库相关配置 ####################
+spring:
+  datasource:
+    dynamic: # 多数据源配置
+      primary: master
+      datasource:
+        master:
+          name: somersault_cloud_report
+          url: jdbc:mysql://${MYSQL_MASTER_ADDR:127.0.0.1:3306}/${spring.datasource.dynamic.datasource.master.name}?useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2b8&nullCatalogMeansCurrent=true
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          username: somersault_cloud
+          password: ${MYSQL_PASSWORD:MySQLP@ssword4somersault_cloud}
+        slave: # 模拟从库，可根据自己需要修改 # 模拟从库，可根据自己需要修改
+          name: somersault_cloud_report
+          url: jdbc:mysql://${MYSQL_SLAVE_ADDR:127.0.0.1:3306}/${spring.datasource.dynamic.datasource.slave.name}?useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2b8&nullCatalogMeansCurrent=true
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          username: somersault_cloud
+          password: ${MYSQL_PASSWORD:MySQLP@ssword4somersault_cloud}
+
+  # Redis 配置。Redisson 默认的配置足够使用，一般不需要进行调优
+  redis:
+    host: ${REDIS_HOST:127.0.0.1}
+    port: 6379 # 端口
+    database: 1 # 数据库索引
+    password: ${REDIS_PASSWORD:RedisP@ssword4somersault_cloud}
+
+biz:
+  info:
+    version: 1.0.0
+    base-package: xyz.entdiy.somersault.module.report
+  web:
+    admin-ui:
+      url: https://www.test.com # Admin 管理后台 UI 的地址
+  swagger:
+    title: 管理后台
+    description: 提供管理员管理的所有功能
+    version: ${biz.info.version}
+    base-package: ${biz.info.base-package}
+  error-code: # 错误码相关配置项
+    constants-class-list:
+      - xyz.entdiy.somersault.module.report.enums.ErrorCodeConstants
+  tenant: # 多租户相关配置项
+    enable: true

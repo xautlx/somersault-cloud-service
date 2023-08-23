@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: iot-server
+
+  profiles:
+    # 详见somersault-cloud-spring-boot-starter-nacos模块下面的bootstrap-nacos.yml全局定义，便于统一设置Nacos连接配置
+    include: nacos
+    # 默认激活local配置，实际部署通过SPRING_PROFILES_ACTIVE环境变量设置
+    active: local
+
+server:
+  # 环境变量动态定义以支持容器化单机部署多个实例
+  port: ${SERVER_PORT:48085}

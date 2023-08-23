@@ -1,0 +1,55 @@
+--- #################### 数据库相关配置 ####################
+spring:
+  datasource:
+    dynamic: # 多数据源配置
+      primary: master
+      datasource:
+        master:
+          url: jdbc:mysql://${MYSQL_MASTER_ADDR:192.168.1.200:3306}/${spring.datasource.dynamic.datasource.master.name}?allowMultiQueries=true&useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&autoReconnect=true&nullCatalogMeansCurrent=true # MySQL Connector/J 8.X 连接的示例
+        slave: # 模拟从库，可根据自己需要修改
+          url: jdbc:mysql://${MYSQL_SLAVE_ADDR:192.168.1.200:3306}/${spring.datasource.dynamic.datasource.slave.name}?allowMultiQueries=true&useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&autoReconnect=true&nullCatalogMeansCurrent=true # MySQL Connector/J 8.X 连接的示例
+
+  # Redis 配置，开发环境直连单Redis实例，生产环境为Sentinel哨兵连接模式
+  redis:
+    host: ${REDIS_HOST:192.168.1.200}
+    port: 6379 # 端口
+    database: 0 # 数据库索引
+
+--- #################### MQ 消息队列相关配置 ####################
+spring:
+  cloud:
+    stream:
+      rocketmq:
+        binder:
+          name-server: ${ROCKETMQ_ADDR:192.168.1.200:9876} # RocketMQ Namesrv 地址
+
+--- #################### 定时任务相关配置 ####################
+xxl:
+  job:
+    enabled: true # 是否开启调度中心，默认为 true 开启
+    admin:
+      addresses: http://192.168.1.200:9090/xxl-job-admin/ # 调度中心部署跟地址，集群多个地址逗号分隔
+
+# 日志文件配置
+logging:
+  level:
+    xyz.entdiy: DEBUG
+
+--- #################### 框架相关配置 ####################
+
+# 框架配置项，设置当前项目所有自定义的配置
+biz:
+  env: # 多环境的配置项
+    tag: ${HOSTNAME}
+  security:
+    mock-enable: true
+  xss:
+    enable: false
+    exclude-urls: # 如下两个 url，仅仅是为了演示，去掉配置也没关系
+      - ${spring.boot.admin.context-path}/** # 不处理 Spring Boot Admin 的请求
+      - ${management.endpoints.web.base-path}/** # 不处理 Actuator 的请求
+  access-log: # 访问日志的配置项
+    enable: false
+  error-code: # 错误码相关配置项
+    enable: false
+  demo: false # 关闭演示模式

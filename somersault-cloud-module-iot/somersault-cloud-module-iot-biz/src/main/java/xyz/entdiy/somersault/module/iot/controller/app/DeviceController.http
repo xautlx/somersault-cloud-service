@@ -1,0 +1,10 @@
+### 获得连接配置
+GET {{appApi}}/iot/device/conn-config/WUGUI01/abc:123
+Authorization: Bearer {{appToken}}
+tenant-id: {{appTenentId}}
+
+### 触发设备运行
+### http://129.168.5.180:48080/app-api/device/run/WUGUI01
+GET {{appApi}}/iot/device/exec/run/WUGUI01
+Authorization: Bearer {{appToken}}
+tenant-id: {{appTenentId}}

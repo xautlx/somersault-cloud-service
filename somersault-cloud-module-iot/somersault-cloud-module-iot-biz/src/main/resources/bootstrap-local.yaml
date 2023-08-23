@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.1.200:8848
+      config:
+        server-addr: 192.168.1.200:8848
+        # 本地开发使用本地配置文件参数，不从Nacos获取配置
+        enabled: false

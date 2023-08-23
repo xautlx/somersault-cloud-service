@@ -1,0 +1,194 @@
+spring:
+  profiles:
+    include: module
+
+--- #################### 数据库相关配置 ####################
+spring:
+  datasource:
+    dynamic: # 多数据源配置
+      primary: master
+      datasource:
+        master:
+          name: somersault_cloud_system
+          url: jdbc:mysql://${MYSQL_MASTER_ADDR:127.0.0.1:3306}/${spring.datasource.dynamic.datasource.master.name}?useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2b8&nullCatalogMeansCurrent=true
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          username: somersault_cloud
+          password: ${MYSQL_PASSWORD:MySQLP@ssword4somersault_cloud}
+        slave: # 模拟从库，可根据自己需要修改 # 模拟从库，可根据自己需要修改
+          name: somersault_cloud_system
+          url: jdbc:mysql://${MYSQL_SLAVE_ADDR:127.0.0.1:3306}/${spring.datasource.dynamic.datasource.slave.name}?useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2b8&nullCatalogMeansCurrent=true
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          username: somersault_cloud
+          password: ${MYSQL_PASSWORD:MySQLP@ssword4somersault_cloud}
+
+  # Redis 配置
+  redis:
+    ###################以下为redis单机模式配置###########################
+    #host: 127.0.0.1    # Redis服务器地址
+    #port: 6379         # Redis服务器连接端口
+    #database: 0        # Redis数据库索引（默认为0）
+    #password: 123456   # Redis服务器连接密码（默认为空）
+    #timeout: 3000      # 连接超时时间（毫秒）
+    ###################以下为redis哨兵增加的配置###########################
+    database: 0        # Redis数据库索引（默认为0）
+    password: ${REDIS_PASSWORD:RedisP@ssword4somersault_cloud}   # Redis服务器连接密码（默认为空）
+    timeout: 3000      # 连接超时时间（毫秒）
+#    sentinel:
+#      nodes: ${REDIS_SENTINEL_NODES_ADDR:192.168.1.201:26379,192.168.1.202:26379,192.168.1.203:26379} # 集群哨兵节点配置，多个节点之间用英文逗号分割
+#      master: ${REDIS_SENTINEL_MASTER_NAME:redis_master} # Redis主节点名称，哨兵配置文件中的名称
+#    lettuce: # Redis的Java驱动包,使用lettuce连接池
+#      pool:
+#        max-active: 200 # 连接池最大连接数（使用负值表示没有限制）
+#        max-wait: -1    # 连接池最大阻塞等待时间（使用负值表示没有限制）
+#        max-idle: 10    # 连接池中的最大空闲连接 (默认为8)
+#        min-idle: 0     # 连接池中的最小空闲连接
+
+--- #################### MQ 消息队列相关配置 ####################
+spring:
+  cloud:
+    # Spring Cloud Stream 配置项，对应 BindingServiceProperties 类
+    stream:
+      function:
+        definition: smsSendConsumer;mailSendConsumer;
+      # Binding 配置项，对应 BindingProperties Map
+      bindings:
+        smsSend-out-0:
+          destination: system_sms_send
+        smsSendConsumer-in-0:
+          destination: system_sms_send
+          group: system_sms_send_consumer_group
+        mailSend-out-0:
+          destination: system_mail_send
+        mailSendConsumer-in-0:
+          destination: system_mail_send
+          group: system_mail_send_consumer_group
+      # Spring Cloud Stream RocketMQ 配置项
+      rocketmq:
+        # RocketMQ Binder 配置项，对应 RocketMQBinderConfigurationProperties 类
+        binder:
+          name-server: ${ROCKETMQ_ADDR:127.0.0.100:9876} # RocketMQ Namesrv 地址
+        default: # 默认 bindings 全局配置
+          producer: # RocketMQ Producer 配置项，对应 RocketMQProducerProperties 类
+            group: system_producer_group # 生产者分组
+            send-type: SYNC # 发送模式，SYNC 同步
+
+    # Spring Cloud Bus 配置项，对应 BusProperties 类
+    bus:
+      enabled: true # 是否开启，默认为 true
+      id: ${spring.application.name}:${server.port} # 编号，Spring Cloud Alibaba 建议使用“应用:端口”的格式
+      destination: springCloudBus # 目标消息队列，默认为 springCloudBus
+
+--- #################### 定时任务相关配置 ####################
+xxl:
+  job:
+    admin:
+      addresses: http://127.0.0.1:9090/xxl-job-admin/ # 调度中心部署跟地址，集群多个地址逗号分隔
+    executor:
+      appname: ${spring.application.name} # 执行器 AppName
+      logpath: ${user.home}/logs/xxl-job/${spring.application.name} # 执行器运行日志文件存储磁盘路径
+      ip: ${XXL_JOB_EXECUTOR_IP:} # 取Nacos注册的IP兼容Docker容器运行模式
+      port: ${XXL_JOB_EXECUTOR_PORT:9999} # 默认端口为9999，实际部署调整为服务端口偏移+10000
+    accessToken: XxlJobToken4somersault_cloud # 执行器通讯TOKEN
+
+--- #################### 微信公众号相关配置 ####################
+wx: # 参见 https://github.com/Wechat-Group/WxJava/blob/develop/spring-boot-starters/wx-java-mp-spring-boot-starter/README.md 文档
+  mp:
+    # 公众号配置(必填)
+    app-id: wx041349c6f39b268b
+    secret: 5abee519483bc9f8cb37ce280e814bd0
+    # 存储配置，解决 AccessToken 的跨节点的共享
+    config-storage:
+      type: RedisTemplate # 采用 RedisTemplate 操作 Redis，会自动从 Spring 中获取
+      key-prefix: wx # Redis Key 的前缀 TODO 解决下 Redis key 管理的配置
+      http-client-type: HttpClient # 采用 HttpClient 请求微信公众号平台
+
+
+--- #################### 验证码相关配置 ####################
+aj:
+  captcha:
+    jigsaw: classpath:images/jigsaw # 滑动验证，底图路径，不配置将使用默认图片；以 classpath: 开头，取 resource 目录下路径
+    pic-click: classpath:images/pic-click # 滑动验证，底图路径，不配置将使用默认图片；以 classpath: 开头，取 resource 目录下路径
+    cache-type: redis # 缓存 local/redis...
+    cache-number: 1000 # local 缓存的阈值,达到这个值，清除缓存
+    timing-clear: 180 # local定时清除过期缓存(单位秒),设置为0代表不执行
+    type: blockPuzzle # 验证码类型 default两种都实例化。 blockPuzzle 滑块拼图 clickWord 文字点选
+    water-mark: 智能校验 # 右下角水印文字(我的水印)，可使用 https://tool.chinaz.com/tools/unicode.aspx 中文转 Unicode，Linux 可能需要转 unicode
+    interference-options: 0 # 滑动干扰项(0/1/2)
+    req-frequency-limit-enable: false # 接口请求次数一分钟限制是否开启 true|false
+    req-get-lock-limit: 5 # 验证失败5次，get接口锁定
+    req-get-lock-seconds: 10 # 验证失败后，锁定时间间隔
+    req-get-minute-limit: 30 # get 接口一分钟内请求数限制
+    req-check-minute-limit: 60 # check 接口一分钟内请求数限制
+    req-verify-minute-limit: 60 # verify 接口一分钟内请求数限制
+
+justauth:
+  enabled: true
+  type:
+    DINGTALK: # 钉钉
+      client-id: dingvrnreaje3yqvzhxg
+      client-secret: i8E6iZyDvZj51JIb0tYsYfVQYOks9Cq1lgryEjFRqC79P3iJcrxEwT6Qk2QvLrLI
+      ignore-check-redirect-uri: true
+    WECHAT_ENTERPRISE: # 企业微信
+      client-id: wwd411c69a39ad2e54
+      client-secret: 1wTb7hYxnpT2TUbIeHGXGo7T0odav1ic10mLdyyATOw
+      agent-id: 1000004
+      ignore-check-redirect-uri: true
+  cache:
+    type: REDIS
+    prefix: 'social_auth_state:' # 缓存前缀，目前只对 Redis 缓存生效，默认 JUSTAUTH::STATE::
+    timeout: 24h # 超时时长，目前只对 Redis 缓存生效，默认 3 分钟
+
+--- #################### 框架相关配置 ####################
+biz:
+  info:
+    version: 1.0.0
+    base-package: xyz.entdiy.somersault.module.system
+  swagger:
+    title: 管理后台
+    description: 提供管理员管理的所有功能
+    version: ${biz.info.version}
+    base-package: ${biz.info.base-package}
+  captcha:
+    enable: true # 验证码的开关，默认为 true；
+  error-code: # 错误码相关配置项
+    constants-class-list:
+      - xyz.entdiy.somersault.module.system.enums.ErrorCodeConstants
+  tenant: # 多租户相关配置项
+    enable: true
+    ignore-urls:
+      - /admin-api/system/tenant/get-id-by-name # 基于名字获取租户，不许带租户编号
+      - /admin-api/system/captcha/get-image # 获取图片验证码，和租户无关
+      - /admin-api/system/captcha/get # 获取图片验证码，和租户无关
+      - /admin-api/system/captcha/check # 校验图片验证码，和租户无关
+      - /admin-api/system/sms/callback/* # 短信回调接口，无法带上租户编号
+      - /rpc-api/system/tenant/valid # 防止递归。避免调用 /rpc-api/system/tenant/valid 接口时，又去触发 /rpc-api/system/tenant/valid 去校验
+      - /rpc-api/system/tenant/id-list # 获得租户列表的时候，无需传递租户编号
+      - /rpc-api/system/error-code/* # 错误码的自动创建与下载的接口，无法带上租户编号
+      - /rpc-api/system/oauth2/token/check # 访问令牌校验时，无需传递租户编号；主要解决上传文件的场景，前端不会传递 tenant-id！
+    ignore-tables:
+      - system_tenant
+      - system_tenant_package
+      - system_dict_data
+      - system_dict_type
+      - system_error_code
+      - system_menu
+      - system_sms_channel
+      - system_sms_template
+      - system_sms_log
+      - system_sensitive_word
+      - system_oauth2_client
+      - system_mail_account
+      - system_mail_template
+      - system_mail_log
+      - system_notify_template
+  sms-code: # 短信验证码相关的配置项
+    expire-times: 10m
+    send-frequency: 1m
+    send-maximum-quantity-per-day: 10
+    begin-code: 9999 # 这里配置 9999 的原因是，测试方便。
+    end-code: 9999 # 这里配置 9999 的原因是，测试方便。
+  pay:
+    pay-notify-url: http://niubi.natapp1.cc/api/pay/order/notify
+    pay-return-url: http://niubi.natapp1.cc/api/pay/order/return
+    refund-notify-url: http://niubi.natapp1.cc/api/pay/refund/notify
+

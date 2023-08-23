@@ -1,0 +1,2 @@
+xyz.entdiy.somersault.framework.datasource.config.CloudDataSourceAutoConfiguration
+xyz.entdiy.somersault.framework.mybatis.config.CloudMybatisAutoConfiguration

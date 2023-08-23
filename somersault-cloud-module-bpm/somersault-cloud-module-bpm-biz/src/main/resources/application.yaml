@@ -1,0 +1,94 @@
+spring:
+  profiles:
+    include: module
+
+--- #################### 数据库相关配置 ####################
+spring:
+  datasource:
+    dynamic: # 多数据源配置
+      primary: master
+      datasource:
+        master:
+          name: somersault_cloud_bpm
+          url: jdbc:mysql://${MYSQL_MASTER_ADDR:127.0.0.1:3306}/${spring.datasource.dynamic.datasource.master.name}?useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2b8&nullCatalogMeansCurrent=true
+          driver-class-name: com.mysql.jdbc.Driver
+          username: somersault_cloud
+          password: ${MYSQL_PASSWORD:MySQLP@ssword4somersault_cloud}
+        slave: # 模拟从库，可根据自己需要修改 # 模拟从库，可根据自己需要修改
+          name: somersault_cloud_bpm
+          url: jdbc:mysql://${MYSQL_SLAVE_ADDR:127.0.0.1:3306}/${spring.datasource.dynamic.datasource.slave.name}?useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2b8&nullCatalogMeansCurrent=true
+          driver-class-name: com.mysql.jdbc.Driver
+          username: somersault_cloud
+          password: ${MYSQL_PASSWORD:MySQLP@ssword4somersault_cloud}
+
+  # Redis 配置。Redisson 默认的配置足够使用，一般不需要进行调优
+  redis:
+    host: ${REDIS_HOST:127.0.0.1}
+    port: 6379 # 端口
+    database: 1 # 数据库索引
+    password: ${REDIS_PASSWORD:RedisP@ssword4somersault_cloud}
+
+# 工作流 Flowable 配置
+flowable:
+  # 1. false: 默认值，Flowable 启动时，对比数据库表中保存的版本，如果不匹配。将抛出异常
+  # 2. true: 启动时会对数据库中所有表进行更新操作，如果表存在，不做处理，反之，自动创建表
+  # 3. create_drop: 启动时自动创建表，关闭时自动删除表
+  # 4. drop_create: 启动时，删除旧表，再创建新表
+  database-schema-update: true # 设置为 false，可通过 https://github.com/flowable/flowable-sql 初始化
+  db-history-used: true # flowable6 默认 true 生成信息表，无需手动设置
+  check-process-definitions: false # 设置为 false，禁用 /resources/processes 自动部署 BPMN XML 流程
+  history-level: full # full：保存历史数据的最高级别，可保存全部流程相关细节，包括流程流转各节点参数
+
+--- #################### MQ 消息队列相关配置 ####################
+
+spring:
+  cloud:
+    # Spring Cloud Stream 配置项，对应 BindingServiceProperties 类
+    stream:
+      # Spring Cloud Stream RocketMQ 配置项
+      rocketmq:
+        # RocketMQ Binder 配置项，对应 RocketMQBinderConfigurationProperties 类
+        binder:
+          name-server: ${ROCKETMQ_ADDR:127.0.0.1:9876} # RocketMQ Namesrv 地址
+        default: # 默认 bindings 全局配置
+          producer: # RocketMQ Producer 配置项，对应 RocketMQProducerProperties 类
+            group: bpm_producer_group # 生产者分组
+            send-type: SYNC # 发送模式，SYNC 同步
+
+    # Spring Cloud Bus 配置项，对应 BusProperties 类
+    bus:
+      enabled: true # 是否开启，默认为 true
+      id: ${spring.application.name}:${server.port} # 编号，Spring Cloud Alibaba 建议使用“应用:端口”的格式
+      destination: springCloudBus # 目标消息队列，默认为 springCloudBus
+
+--- #################### 定时任务相关配置 ####################
+
+xxl:
+  job:
+    admin:
+      addresses: http://127.0.0.1:9090/xxl-job-admin/ # 调度中心部署跟地址，集群多个地址逗号分隔
+    executor:
+      appname: ${spring.application.name} # 执行器 AppName
+      logpath: ${user.home}/logs/xxl-job/${spring.application.name} # 执行器运行日志文件存储磁盘路径
+      ip: ${XXL_JOB_EXECUTOR_IP:} # 取Nacos注册的IP兼容Docker容器运行模式
+      port: ${XXL_JOB_EXECUTOR_PORT:9999} # 默认端口为9999，实际部署调整为服务端口偏移+10000
+    accessToken: XxlJobToken4somersault_cloud # 执行器通讯TOKEN
+
+--- #################### 框架相关配置 ####################
+
+biz:
+  info:
+    version: 1.0.0
+    base-package: xyz.entdiy.somersault.module.bpm
+  swagger:
+    title: 管理后台
+    description: 提供管理员管理的所有功能
+    version: ${biz.info.version}
+    base-package: ${biz.info.base-package}
+  captcha:
+    timeout: 5m
+    width: 160
+    height: 60
+  error-code: # 错误码相关配置项
+    constants-class-list:
+      - xyz.entdiy.somersault.module.bpm.enums.ErrorCodeConstants

@@ -1,0 +1,63 @@
+--- #################### 数据库相关配置 ####################
+spring:
+  datasource:
+    dynamic: # 多数据源配置
+      primary: master
+      datasource:
+        master:
+          name: somersault_cloud_system
+          url: jdbc:mysql://${MYSQL_MASTER_ADDR:192.168.1.200:3306}/${spring.datasource.dynamic.datasource.master.name}?allowMultiQueries=true&useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&autoReconnect=true&nullCatalogMeansCurrent=true # MySQL Connector/J 8.X 连接的示例
+        slave: # 模拟从库，可根据自己需要修改
+          name: somersault_cloud_system
+          url: jdbc:mysql://${MYSQL_SLAVE_ADDR:192.168.1.200:3306}/${spring.datasource.dynamic.datasource.slave.name}?allowMultiQueries=true&useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&autoReconnect=true&nullCatalogMeansCurrent=true # MySQL Connector/J 8.X 连接的示例
+
+  # Redis 配置，开发环境直连单Redis实例，生产环境为Sentinel哨兵连接模式
+  redis:
+    host: ${REDIS_HOST:192.168.1.200}
+    port: 6379 # 端口
+    database: 0 # 数据库索引
+
+--- #################### MQ 消息队列相关配置 ####################
+spring:
+  cloud:
+    stream:
+      rocketmq:
+        binder:
+          name-server: 192.168.1.200:9876 # RocketMQ Namesrv
+
+--- #################### 定时任务相关配置 ####################
+
+xxl:
+  job:
+    enabled: false # 是否开启调度中心，默认为 true 开启
+
+# 日志文件配置
+logging:
+  level:
+    # 配置自己写的 MyBatis Mapper 打印日志
+    xyz.entdiy.somersault.module.system.dal.mysql: debug
+
+--- #################### 微信公众号相关配置 ####################
+wx: # 参见 https://github.com/Wechat-Group/WxJava/blob/develop/spring-boot-starters/wx-java-mp-spring-boot-starter/README.md 文档
+  mp:
+    # 公众号配置(必填)
+    app-id: wx041349c6f39b268b
+    secret: 5abee519483bc9f8cb37ce280e814bd0
+    # 存储配置，解决 AccessToken 的跨节点的共享
+    config-storage:
+      type: RedisTemplate # 采用 RedisTemplate 操作 Redis，会自动从 Spring 中获取
+      key-prefix: wx # Redis Key 的前缀 TODO 解决下 Redis key 管理的配置
+      http-client-type: HttpClient # 采用 HttpClient 请求微信公众号平台
+
+--- #################### 框架相关配置 ####################
+
+# 框架配置项，设置当前项目所有自定义的配置
+biz:
+  captcha:
+    enable: false # 本地环境，暂时关闭图片验证码，方便登录等接口的测试
+  security:
+    mock-enable: true
+  access-log: # 访问日志的配置项
+    enable: false
+  error-code: # 错误码相关配置项
+    enable: false

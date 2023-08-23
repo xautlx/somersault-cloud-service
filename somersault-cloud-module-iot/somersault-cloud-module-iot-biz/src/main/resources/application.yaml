@@ -1,0 +1,64 @@
+--- #################### 模块共享配置 ####################
+spring:
+  profiles:
+    include: module # 详见somersault-cloud-config-module模块下application-module.yaml
+
+--- #################### 数据库相关配置 ####################
+spring:
+  datasource:
+    dynamic: # 多数据源配置
+      primary: master
+      datasource:
+        master:
+          name: somersault_cloud_iot
+          url: jdbc:mysql://${MYSQL_MASTER_ADDR:127.0.0.1:3306}/${spring.datasource.dynamic.datasource.master.name}?allowMultiQueries=true&useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&autoReconnect=true&nullCatalogMeansCurrent=true # MySQL Connector/J 8.X 连接的示例
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          username: somersault_cloud
+          password: ${MYSQL_PASSWORD:MySQLP@ssword4somersault_cloud}
+        slave: # 模拟从库，可根据自己需要修改
+          name: somersault_cloud_iot
+          url: jdbc:mysql://${MYSQL_SLAVE_ADDR:127.0.0.1:3306}/${spring.datasource.dynamic.datasource.slave.name}?allowMultiQueries=true&useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&autoReconnect=true&nullCatalogMeansCurrent=true # MySQL Connector/J 8.X 连接的示例
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          username: somersault_cloud
+          password: ${MYSQL_PASSWORD:MySQLP@ssword4somersault_cloud}
+
+  # Redis 配置
+  redis:
+    ###################以下为redis单机模式配置###########################
+    #host: 127.0.0.1    # Redis服务器地址
+    #port: 6379         # Redis服务器连接端口
+    #database: 0        # Redis数据库索引（默认为0）
+    #password: 123456   # Redis服务器连接密码（默认为空）
+    #timeout: 3000      # 连接超时时间（毫秒）
+    ###################以下为redis哨兵增加的配置###########################
+    database: 0        # Redis数据库索引（默认为0）
+    password: ${REDIS_PASSWORD:RedisP@ssword4somersault_cloud}   # Redis服务器连接密码（默认为空）
+    timeout: 3000      # 连接超时时间（毫秒）
+#    sentinel:
+#      nodes: ${REDIS_SENTINEL_NODES_ADDR:192.168.1.201:26379,192.168.1.202:26379,192.168.1.203:26379} # 集群哨兵节点配置，多个节点之间用英文逗号分割
+#      master: ${REDIS_SENTINEL_MASTER_NAME:redis_master} # Redis主节点名称，哨兵配置文件中的名称
+#    lettuce: # Redis的Java驱动包,使用lettuce连接池
+#      pool:
+#        max-active: 200 # 连接池最大连接数（使用负值表示没有限制）
+#        max-wait: -1    # 连接池最大阻塞等待时间（使用负值表示没有限制）
+#        max-idle: 10    # 连接池中的最大空闲连接 (默认为8)
+#        min-idle: 0     # 连接池中的最小空闲连接
+
+--- #################### 框架相关配置 ####################
+biz:
+  info:
+    version: 1.0.0
+    base-package: xyz.entdiy.somersault.module.iot
+  swagger:
+    title: 物联设备管理
+    description: 基于MQTT进行设备在线控制和管理
+    version: ${biz.info.version}
+    base-package: ${biz.info.base-package}
+  error-code: # 错误码相关配置项
+    constants-class-list:
+      - xyz.entdiy.somersault.module.iot.enums.ErrorCodeConstants
+  tenant: # 多租户相关配置项
+    enable: true
+    ignore-urls:
+      - /app-api/iot/exec/*/* # 设备接口直接调用
+      - /app-api/iot/conn-config/* # 设备接口直接调用

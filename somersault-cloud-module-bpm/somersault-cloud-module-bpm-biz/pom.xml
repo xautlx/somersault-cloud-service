@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>xyz.entdiy</groupId>
+        <artifactId>somersault-cloud-module-bpm</artifactId>
+        <version>1.0.0-snapshot</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>somersault-cloud-module-bpm-biz</artifactId>
+
+    <name>${project.artifactId}</name>
+    <description>
+        bpm 包下，业务流程管理（Business Process Management），我们放工作流的功能，基于 Flowable 6 版本实现。
+        例如说：流程定义、表单配置、审核中心（我的申请、我的待办、我的已办）等等    </description>
+
+    <properties>
+        <docker.image.name>somersault-cloud/bpm</docker.image.name>
+    </properties>
+
+    <dependencies>
+        <!-- Spring Cloud 基础 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>xyz.entdiy</groupId>
+            <artifactId>somersault-cloud-module-bpm-api</artifactId>
+            <version>1.0.0-snapshot</version>
+        </dependency>
+        <dependency>
+            <groupId>xyz.entdiy</groupId>
+            <artifactId>somersault-cloud-module-system-api</artifactId>
+            <version>1.0.0-snapshot</version>
+        </dependency>
+
+        <!-- 业务组件 -->
+        <dependency>
+            <groupId>xyz.entdiy</groupId>
+            <artifactId>somersault-cloud-spring-boot-starter-biz-operatelog</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>xyz.entdiy</groupId>
+            <artifactId>somersault-cloud-spring-boot-starter-biz-data-permission</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>xyz.entdiy</groupId>
+            <artifactId>somersault-cloud-spring-boot-starter-biz-tenant</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>xyz.entdiy</groupId>
+            <artifactId>somersault-cloud-spring-boot-starter-biz-error-code</artifactId>
+        </dependency>
+
+        <!-- Web 相关 -->
+        <dependency>
+            <groupId>xyz.entdiy</groupId>
+            <artifactId>somersault-cloud-spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <!-- DB 相关 -->
+        <dependency>
+            <groupId>xyz.entdiy</groupId>
+            <artifactId>somersault-cloud-spring-boot-starter-mybatis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>xyz.entdiy</groupId>
+            <artifactId>somersault-cloud-spring-boot-starter-redis</artifactId>
+        </dependency>
+
+        <!-- RPC 远程调用相关 -->
+        <dependency>
+            <groupId>xyz.entdiy</groupId>
+            <artifactId>somersault-cloud-spring-boot-starter-rpc</artifactId>
+        </dependency>
+
+        <!-- Nacos注册和配置相关 -->
+        <dependency>
+            <groupId>xyz.entdiy</groupId>
+            <artifactId>somersault-cloud-spring-boot-starter-nacos</artifactId>
+        </dependency>
+
+        <!-- Nacos全局Config配置引用 -->
+        <dependency>
+            <groupId>xyz.entdiy</groupId>
+            <artifactId>somersault-cloud-config-nacos</artifactId>
+        </dependency>
+
+        <!-- Module全局Config配置引用 -->
+        <dependency>
+            <groupId>xyz.entdiy</groupId>
+            <artifactId>somersault-cloud-config-module</artifactId>
+        </dependency>
+
+        <!-- Job 定时任务相关 -->
+        <dependency>
+            <groupId>xyz.entdiy</groupId>
+            <artifactId>somersault-cloud-spring-boot-starter-job</artifactId>
+        </dependency>
+
+        <!-- 消息队列相关 -->
+        <dependency>
+            <groupId>xyz.entdiy</groupId>
+            <artifactId>somersault-cloud-spring-boot-starter-mq</artifactId>
+        </dependency>
+
+        <!-- 服务保障相关 TODO 暂时去掉 -->
+        <!--        <dependency>-->
+        <!--            <groupId>xyz.entdiy</groupId>-->
+        <!--            <artifactId>somersault-cloud-spring-boot-starter-protection</artifactId>-->
+        <!--        </dependency>-->
+
+        <!-- Test 测试相关 -->
+        <dependency>
+            <groupId>xyz.entdiy</groupId>
+            <artifactId>somersault-cloud-spring-boot-starter-test</artifactId>
+        </dependency>
+
+        <!-- 监控相关 -->
+        <dependency>
+            <groupId>xyz.entdiy</groupId>
+            <artifactId>somersault-cloud-spring-boot-starter-monitor</artifactId>
+        </dependency>
+
+        <!-- 工作流相关 -->
+        <dependency>
+            <groupId>xyz.entdiy</groupId>
+            <artifactId>somersault-cloud-spring-boot-starter-flowable</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>

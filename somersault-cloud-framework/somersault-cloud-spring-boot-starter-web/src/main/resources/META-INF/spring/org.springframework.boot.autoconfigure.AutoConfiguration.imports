@@ -1,0 +1,5 @@
+xyz.entdiy.somersault.framework.apilog.config.CloudApiLogAutoConfiguration
+xyz.entdiy.somersault.framework.jackson.config.CloudJacksonAutoConfiguration
+xyz.entdiy.somersault.framework.swagger.config.CloudSwaggerAutoConfiguration
+xyz.entdiy.somersault.framework.web.config.CloudWebAutoConfiguration
+xyz.entdiy.somersault.framework.apilog.config.CloudApiLogRpcAutoConfiguration

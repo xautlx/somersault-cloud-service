@@ -1,0 +1,3 @@
+xyz.entdiy.somersault.framework.tenant.config.CloudTenantRpcAutoConfiguration
+xyz.entdiy.somersault.framework.tenant.config.CloudTenantAutoConfiguration
+xyz.entdiy.somersault.framework.tenant.config.CloudTenantMQAutoConfiguration
