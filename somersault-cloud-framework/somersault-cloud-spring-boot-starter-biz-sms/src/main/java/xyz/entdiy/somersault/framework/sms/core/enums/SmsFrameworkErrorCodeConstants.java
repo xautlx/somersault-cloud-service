@@ -7,7 +7,7 @@ import xyz.entdiy.somersault.framework.common.exception.ErrorCode;
  *
  * 短信框架，使用 2-001-000-000 段
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface SmsFrameworkErrorCodeConstants {
 

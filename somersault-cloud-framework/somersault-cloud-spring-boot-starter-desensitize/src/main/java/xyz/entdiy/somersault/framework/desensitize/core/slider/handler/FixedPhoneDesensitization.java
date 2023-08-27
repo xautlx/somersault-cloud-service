@@ -5,7 +5,7 @@ import xyz.entdiy.somersault.framework.desensitize.core.slider.annotation.FixedP
 /**
  * {@link FixedPhoneDesensitize} 的脱敏处理器
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class FixedPhoneDesensitization extends AbstractSliderDesensitizationHandler<FixedPhoneDesensitize> {
     @Override

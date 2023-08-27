@@ -40,7 +40,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link AliyunSmsClient} 的单元测试
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class AliyunSmsClientTest extends BaseMockitoUnitTest {
 

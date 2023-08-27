@@ -10,7 +10,7 @@ import javax.validation.constraints.NotNull;
 /**
  * 短信渠道配置类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  * @since 2021/1/25 17:01
  */
 @Data

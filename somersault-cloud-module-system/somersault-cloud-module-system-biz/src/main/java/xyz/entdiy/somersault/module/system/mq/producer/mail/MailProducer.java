@@ -11,7 +11,7 @@ import javax.annotation.Resource;
 /**
  * Mail 邮件相关消息的 Producer
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  * @since 2021/4/19 13:33
  */
 @Slf4j

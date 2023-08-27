@@ -24,7 +24,7 @@ import static xyz.entdiy.somersault.module.system.enums.ErrorCodeConstants.*;
 /**
  * 短信验证码 Service 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Service
 @Validated

@@ -1,8 +1,8 @@
 package xyz.entdiy.somersault.module.system.test;
 
-import xyz.entdiy.somersault.framework.datasource.config.CloudDataSourceAutoConfiguration;
-import xyz.entdiy.somersault.framework.mybatis.config.CloudMybatisAutoConfiguration;
-import xyz.entdiy.somersault.framework.redis.config.CloudRedisAutoConfiguration;
+import xyz.entdiy.somersault.framework.datasource.config.BizDataSourceAutoConfiguration;
+import xyz.entdiy.somersault.framework.mybatis.config.BizMybatisAutoConfiguration;
+import xyz.entdiy.somersault.framework.redis.config.BizRedisAutoConfiguration;
 import com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration;
 import com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration;
 import org.redisson.spring.starter.RedissonAutoConfiguration;
@@ -20,16 +20,16 @@ public class BaseDbAndRedisIntegrationTest {
     @Import({
             // DB 配置类
             DynamicDataSourceAutoConfiguration.class, // Dynamic Datasource 配置类
-            CloudDataSourceAutoConfiguration.class, // 自己的 DB 配置类
+            BizDataSourceAutoConfiguration.class, // 自己的 DB 配置类
             DataSourceAutoConfiguration.class, // Spring DB 自动配置类
             DataSourceTransactionManagerAutoConfiguration.class, // Spring 事务自动配置类
             // MyBatis 配置类
-            CloudMybatisAutoConfiguration.class, // 自己的 MyBatis 配置类
+            BizMybatisAutoConfiguration.class, // 自己的 MyBatis 配置类
             MybatisPlusAutoConfiguration.class, // MyBatis 的自动配置类
 
             // Redis 配置类
             RedisAutoConfiguration.class, // Spring Redis 自动配置类
-            CloudRedisAutoConfiguration.class, // 自己的 Redis 配置类
+            BizRedisAutoConfiguration.class, // 自己的 Redis 配置类
             RedissonAutoConfiguration.class, // Redisson 自动高配置类
     })
     public static class Application {

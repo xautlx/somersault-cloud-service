@@ -28,7 +28,7 @@ import static xyz.entdiy.somersault.module.system.enums.ErrorCodeConstants.*;
 /**
  * 字典数据 Service 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Service
 @Slf4j

@@ -28,7 +28,7 @@ import static xyz.entdiy.somersault.framework.common.util.json.JsonUtils.toJsonS
 /**
  * API 访问日志 Filter
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Slf4j
 public class ApiAccessLogFilter extends ApiRequestFilter {

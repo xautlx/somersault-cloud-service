@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * 字典类型 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface TestDemoService {
 

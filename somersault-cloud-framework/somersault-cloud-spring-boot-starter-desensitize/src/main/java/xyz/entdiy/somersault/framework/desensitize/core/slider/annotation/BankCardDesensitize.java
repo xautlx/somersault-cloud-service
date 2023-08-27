@@ -13,7 +13,7 @@ import java.lang.annotation.Target;
 /**
  * 银行卡号
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Documented
 @Target({ElementType.FIELD})

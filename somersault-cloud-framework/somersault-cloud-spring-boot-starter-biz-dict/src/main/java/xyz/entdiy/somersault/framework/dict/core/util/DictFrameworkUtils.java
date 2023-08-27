@@ -15,7 +15,7 @@ import java.time.Duration;
 /**
  * 字典工具类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Slf4j
 public class DictFrameworkUtils {

@@ -28,7 +28,7 @@ import static xyz.entdiy.somersault.framework.common.util.collection.CollectionU
 /**
  * OAuth2.0 Token Service 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Service
 public class OAuth2TokenServiceImpl implements OAuth2TokenService {

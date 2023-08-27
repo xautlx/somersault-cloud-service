@@ -3,7 +3,7 @@ package xyz.entdiy.somersault.framework.apilog.core.service;
 /**
  * API 访问日志 Framework Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface ApiAccessLogFrameworkService {
 

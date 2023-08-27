@@ -12,7 +12,7 @@ import static xyz.entdiy.somersault.framework.web.core.util.WebFrameworkUtils.HE
  * 多租户 FunctionAroundWrapper 实现类
  * 消费消息时，设置租户编号到 Context 上
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class TenantFunctionAroundWrapper extends FunctionAroundWrapper {
 

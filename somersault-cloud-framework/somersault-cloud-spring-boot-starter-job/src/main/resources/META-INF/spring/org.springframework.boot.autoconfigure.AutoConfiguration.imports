@@ -1,2 +1,2 @@
-xyz.entdiy.somersault.framework.quartz.config.CloudXxlJobAutoConfiguration
-xyz.entdiy.somersault.framework.quartz.config.CloudAsyncAutoConfiguration
+xyz.entdiy.somersault.framework.quartz.config.BizXxlJobAutoConfiguration
+xyz.entdiy.somersault.framework.quartz.config.BizAsyncAutoConfiguration

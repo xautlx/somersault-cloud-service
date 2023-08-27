@@ -1,6 +1,7 @@
 package xyz.entdiy.somersault.module.system.service.permission;
 
 import cn.hutool.core.collection.CollUtil;
+import cn.hutool.core.collection.CollectionUtil;
 import xyz.entdiy.somersault.module.system.controller.admin.permission.vo.menu.MenuCreateReqVO;
 import xyz.entdiy.somersault.module.system.controller.admin.permission.vo.menu.MenuListReqVO;
 import xyz.entdiy.somersault.module.system.controller.admin.permission.vo.menu.MenuUpdateReqVO;
@@ -20,6 +21,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 import static xyz.entdiy.somersault.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -30,7 +32,7 @@ import static xyz.entdiy.somersault.module.system.enums.ErrorCodeConstants.*;
 /**
  * 菜单 Service 实现
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Service
 @Slf4j
@@ -45,7 +47,8 @@ public class MenuServiceImpl implements MenuService {
     private TenantService tenantService;
 
     @Override
-    @CacheEvict(value = RedisKeyConstants.PERMISSION_MENU_ID_LIST, key = "#reqVO.permission")
+    @CacheEvict(value = RedisKeyConstants.PERMISSION_MENU_ID_LIST, key = "#reqVO.permission",
+            condition = "#reqVO.permission != null")
     public Long createMenu(MenuCreateReqVO reqVO) {
         // 校验父菜单存在
         validateParentMenu(reqVO.getParentId(), null);
@@ -130,6 +133,9 @@ public class MenuServiceImpl implements MenuService {
 
     @Override
     public List<MenuDO> getMenuList(Collection<Long> ids) {
+        if (CollectionUtil.isEmpty(ids)) {
+            return Collections.emptyList();
+        }
         return menuMapper.selectBatchIds(ids);
     }
 

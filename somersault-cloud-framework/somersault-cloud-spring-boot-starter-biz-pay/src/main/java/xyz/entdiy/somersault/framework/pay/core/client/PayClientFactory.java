@@ -3,7 +3,7 @@ package xyz.entdiy.somersault.framework.pay.core.client;
 /**
  * 支付客户端的工厂接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface PayClientFactory {
 

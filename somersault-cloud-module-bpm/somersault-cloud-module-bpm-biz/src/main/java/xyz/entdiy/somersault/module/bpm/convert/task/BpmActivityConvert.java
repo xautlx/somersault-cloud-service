@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * BPM 活动 Convert
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface BpmActivityConvert {

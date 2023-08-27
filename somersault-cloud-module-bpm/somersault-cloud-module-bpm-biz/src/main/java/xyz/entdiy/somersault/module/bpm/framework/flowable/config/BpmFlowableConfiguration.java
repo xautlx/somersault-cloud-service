@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * BPM 模块的 Flowable 配置类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Configuration(proxyBeanMethods = false)
 public class BpmFlowableConfiguration {

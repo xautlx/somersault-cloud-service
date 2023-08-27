@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * 站内信发送 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface NotifySendService {
 

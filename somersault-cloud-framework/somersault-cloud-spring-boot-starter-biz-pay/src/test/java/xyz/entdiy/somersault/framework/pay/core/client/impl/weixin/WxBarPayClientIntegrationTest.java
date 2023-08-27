@@ -23,7 +23,7 @@ import static xyz.entdiy.somersault.framework.pay.core.client.impl.weixin.Abstra
 /**
  * {@link WxBarPayClient} 的集成测试，用于快速调试微信条码支付
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Disabled
 public class WxBarPayClientIntegrationTest {

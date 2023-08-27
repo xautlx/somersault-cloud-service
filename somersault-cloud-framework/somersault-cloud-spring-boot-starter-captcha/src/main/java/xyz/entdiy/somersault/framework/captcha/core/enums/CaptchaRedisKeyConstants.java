@@ -3,7 +3,7 @@ package xyz.entdiy.somersault.framework.captcha.core.enums;
 /**
  * 验证码 Redis Key 枚举类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface CaptchaRedisKeyConstants {
 

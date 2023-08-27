@@ -30,7 +30,7 @@ import static xyz.entdiy.somersault.module.system.enums.ErrorCodeConstants.*;
 /**
  * OAuth2.0 Client Service 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Service
 @Validated

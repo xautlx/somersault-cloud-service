@@ -13,7 +13,7 @@ import java.util.List;
  * 工作流的表单定义
  * 用于工作流的申请表单，需要动态配置的场景
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @TableName(value = "bpm_form", autoResultMap = true)
 @Data

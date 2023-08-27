@@ -22,7 +22,7 @@ import java.util.Map;
 /**
  * Bpm 流程定义的 Convert
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface BpmProcessDefinitionConvert {

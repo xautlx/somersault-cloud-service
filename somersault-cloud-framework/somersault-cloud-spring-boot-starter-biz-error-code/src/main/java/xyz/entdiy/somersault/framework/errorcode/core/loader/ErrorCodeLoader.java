@@ -7,7 +7,7 @@ import xyz.entdiy.somersault.framework.common.exception.util.ServiceExceptionUti
  *
  * 注意，错误码最终加载到 {@link ServiceExceptionUtil} 的 MESSAGES 变量中！
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface ErrorCodeLoader {
 

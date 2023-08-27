@@ -15,7 +15,7 @@ import java.util.Set;
 /**
  * 角色 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface RoleService {
 

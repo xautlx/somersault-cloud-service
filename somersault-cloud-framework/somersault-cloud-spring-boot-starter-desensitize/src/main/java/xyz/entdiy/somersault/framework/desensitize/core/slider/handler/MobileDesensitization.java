@@ -5,7 +5,7 @@ import xyz.entdiy.somersault.framework.desensitize.core.slider.annotation.Mobile
 /**
  * {@link MobileDesensitize} 的脱敏处理器
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class MobileDesensitization extends AbstractSliderDesensitizationHandler<MobileDesensitize> {
 

@@ -15,7 +15,7 @@ import java.util.*;
 /**
  * 后台用户 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface AdminUserService {
 

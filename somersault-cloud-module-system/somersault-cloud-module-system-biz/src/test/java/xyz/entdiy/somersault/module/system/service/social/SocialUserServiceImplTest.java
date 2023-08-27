@@ -1,7 +1,7 @@
 package xyz.entdiy.somersault.module.system.service.social;
 
 import xyz.entdiy.somersault.framework.common.enums.UserTypeEnum;
-import xyz.entdiy.somersault.framework.social.core.CloudAuthRequestFactory;
+import xyz.entdiy.somersault.framework.social.core.BizAuthRequestFactory;
 import xyz.entdiy.somersault.framework.test.core.ut.BaseDbUnitTest;
 import xyz.entdiy.somersault.module.system.api.social.dto.SocialUserBindReqDTO;
 import xyz.entdiy.somersault.module.system.dal.dataobject.social.SocialUserBindDO;
@@ -46,7 +46,7 @@ public class SocialUserServiceImplTest extends BaseDbUnitTest {
     private SocialUserBindMapper socialUserBindMapper;
 
     @MockBean
-    private CloudAuthRequestFactory authRequestFactory;
+    private BizAuthRequestFactory authRequestFactory;
 
     @Test
     public void testGetAuthorizeUrl() {

@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * 错误码 Convert
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface ErrorCodeConvert {

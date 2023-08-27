@@ -31,7 +31,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * {@link SensitiveWordServiceImpl} 的单元测试类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Import(SensitiveWordServiceImpl.class)
 public class SensitiveWordServiceImplTest extends BaseDbUnitTest {

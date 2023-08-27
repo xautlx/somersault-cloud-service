@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * API 错误日志 Convert
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface ApiErrorLogConvert {

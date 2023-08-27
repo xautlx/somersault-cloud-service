@@ -12,7 +12,7 @@ import static xyz.entdiy.somersault.framework.sms.core.enums.SmsFrameworkErrorCo
  *
  * 参见 https://cloud.tencent.com/document/api/382/52075#.E5.85.AC.E5.85.B1.E9.94.99.E8.AF.AF.E7.A0.81
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class TencentSmsCodeMapping implements SmsCodeMapping {
 

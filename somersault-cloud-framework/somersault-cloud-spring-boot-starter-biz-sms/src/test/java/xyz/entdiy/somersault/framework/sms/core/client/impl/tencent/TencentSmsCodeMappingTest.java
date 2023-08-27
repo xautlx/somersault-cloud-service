@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * {@link TencentSmsCodeMapping} 的单元测试
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class TencentSmsCodeMappingTest extends BaseMockitoUnitTest {
 

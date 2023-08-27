@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * 短信的发送状态枚举
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Getter
 @AllArgsConstructor

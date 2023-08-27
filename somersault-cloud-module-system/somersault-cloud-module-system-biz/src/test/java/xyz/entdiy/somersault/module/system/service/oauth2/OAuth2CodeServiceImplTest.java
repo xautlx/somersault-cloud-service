@@ -24,7 +24,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * {@link OAuth2CodeServiceImpl} 的单元测试类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Import(OAuth2CodeServiceImpl.class)
 class OAuth2CodeServiceImplTest extends BaseDbUnitTest {

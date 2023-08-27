@@ -24,7 +24,7 @@ import java.util.Map;
 /**
  * Bpm 任务 Convert
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface BpmTaskConvert {

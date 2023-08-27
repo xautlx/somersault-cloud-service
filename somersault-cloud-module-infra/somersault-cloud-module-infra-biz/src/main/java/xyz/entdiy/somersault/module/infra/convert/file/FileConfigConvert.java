@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * 文件配置 Convert
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface FileConfigConvert {

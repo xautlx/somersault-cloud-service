@@ -1,2 +1,2 @@
-xyz.entdiy.somersault.framework.tracer.config.CloudTracerAutoConfiguration
-xyz.entdiy.somersault.framework.tracer.config.CloudMetricsAutoConfiguration
+xyz.entdiy.somersault.framework.tracer.config.BizTracerAutoConfiguration
+xyz.entdiy.somersault.framework.tracer.config.BizMetricsAutoConfiguration

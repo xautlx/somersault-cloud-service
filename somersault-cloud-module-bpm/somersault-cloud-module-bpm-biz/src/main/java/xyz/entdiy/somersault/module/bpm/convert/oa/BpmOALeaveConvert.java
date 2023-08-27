@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * 请假申请 Convert
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface BpmOALeaveConvert {

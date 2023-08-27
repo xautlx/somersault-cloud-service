@@ -44,7 +44,7 @@ import static xyz.entdiy.somersault.module.system.enums.ErrorCodeConstants.*;
 /**
  * 后台用户 Service 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Service("adminUserService")
 @Slf4j

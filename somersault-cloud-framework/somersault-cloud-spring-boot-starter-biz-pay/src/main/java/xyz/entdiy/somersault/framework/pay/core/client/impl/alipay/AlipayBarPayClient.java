@@ -21,7 +21,7 @@ import static xyz.entdiy.somersault.framework.common.exception.util.ServiceExcep
  *
  * 文档：<a href="https://opendocs.alipay.com/open/194/105072">当面付</a>
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Slf4j
 public class AlipayBarPayClient extends AbstractAlipayPayClient {

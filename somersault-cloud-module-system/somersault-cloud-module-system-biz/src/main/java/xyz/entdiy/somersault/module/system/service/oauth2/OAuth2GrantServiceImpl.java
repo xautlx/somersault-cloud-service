@@ -19,7 +19,7 @@ import static xyz.entdiy.somersault.framework.common.exception.util.ServiceExcep
 /**
  * OAuth2 授予 Service 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Service
 public class OAuth2GrantServiceImpl implements OAuth2GrantService {

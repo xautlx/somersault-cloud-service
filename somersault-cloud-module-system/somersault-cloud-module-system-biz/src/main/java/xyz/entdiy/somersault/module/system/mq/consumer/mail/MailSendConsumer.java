@@ -11,7 +11,7 @@ import java.util.function.Consumer;
 /**
  * 针对 {@link MailSendMessage} 的消费者
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Component
 @Slf4j

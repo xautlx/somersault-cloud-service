@@ -9,6 +9,7 @@ import xyz.entdiy.somersault.module.system.dal.dataobject.mail.MailAccountDO;
 import xyz.entdiy.somersault.module.system.dal.mysql.mail.MailAccountMapper;
 import xyz.entdiy.somersault.module.system.dal.redis.RedisKeyConstants;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
@@ -23,7 +24,7 @@ import static xyz.entdiy.somersault.module.system.enums.ErrorCodeConstants.MAIL_
 /**
  * 邮箱账号 Service 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  * @since 2022-03-21
  */
 @Service
@@ -46,7 +47,7 @@ public class MailAccountServiceImpl implements MailAccountService {
     }
 
     @Override
-    @Cacheable(value = RedisKeyConstants.MAIL_ACCOUNT, key = "#updateReqVO.id")
+    @CacheEvict(value = RedisKeyConstants.MAIL_ACCOUNT, key = "#updateReqVO.id")
     public void updateMailAccount(MailAccountUpdateReqVO updateReqVO) {
         // 校验是否存在
         validateMailAccountExists(updateReqVO.getId());
@@ -57,7 +58,7 @@ public class MailAccountServiceImpl implements MailAccountService {
     }
 
     @Override
-    @Cacheable(value = RedisKeyConstants.MAIL_ACCOUNT, key = "#id")
+    @CacheEvict(value = RedisKeyConstants.MAIL_ACCOUNT, key = "#id")
     public void deleteMailAccount(Long id) {
         // 校验是否存在账号
         validateMailAccountExists(id);

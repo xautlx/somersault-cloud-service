@@ -39,7 +39,7 @@ import static xyz.entdiy.somersault.module.infra.enums.ErrorCodeConstants.FILE_C
 /**
  * 文件配置 Service 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Service
 @Validated

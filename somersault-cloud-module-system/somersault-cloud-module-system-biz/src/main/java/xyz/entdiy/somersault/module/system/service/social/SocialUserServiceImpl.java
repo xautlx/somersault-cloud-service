@@ -3,7 +3,7 @@ package xyz.entdiy.somersault.module.system.service.social;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.lang.Assert;
 import xyz.entdiy.somersault.framework.common.util.http.HttpUtils;
-import xyz.entdiy.somersault.framework.social.core.CloudAuthRequestFactory;
+import xyz.entdiy.somersault.framework.social.core.BizAuthRequestFactory;
 import xyz.entdiy.somersault.module.system.api.social.dto.SocialUserBindReqDTO;
 import xyz.entdiy.somersault.module.system.dal.dataobject.social.SocialUserBindDO;
 import xyz.entdiy.somersault.module.system.dal.dataobject.social.SocialUserDO;
@@ -32,15 +32,15 @@ import static xyz.entdiy.somersault.module.system.enums.ErrorCodeConstants.*;
 /**
  * 社交用户 Service 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Service
 @Validated
 @Slf4j
 public class SocialUserServiceImpl implements SocialUserService {
 
-    @Resource// 由于自定义了 CloudAuthRequestFactory 无法覆盖默认的 AuthRequestFactory，所以只能注入它
-    private CloudAuthRequestFactory cloudAuthRequestFactory;
+    @Resource// 由于自定义了 BizAuthRequestFactory 无法覆盖默认的 AuthRequestFactory，所以只能注入它
+    private BizAuthRequestFactory bizAuthRequestFactory;
 
     @Resource
     private SocialUserBindMapper socialUserBindMapper;
@@ -50,7 +50,7 @@ public class SocialUserServiceImpl implements SocialUserService {
     @Override
     public String getAuthorizeUrl(Integer type, String redirectUri) {
         // 获得对应的 AuthRequest 实现
-        AuthRequest authRequest = cloudAuthRequestFactory.get(SocialTypeEnum.valueOfType(type).getSource());
+        AuthRequest authRequest = bizAuthRequestFactory.get(SocialTypeEnum.valueOfType(type).getSource());
         // 生成跳转地址
         String authorizeUri = authRequest.authorize(AuthStateUtils.createState());
         return HttpUtils.replaceUrlQuery(authorizeUri, "redirect_uri", redirectUri);
@@ -153,7 +153,7 @@ public class SocialUserServiceImpl implements SocialUserService {
      * @return 授权的用户
      */
     private AuthUser getAuthUser(Integer type, String code, String state) {
-        AuthRequest authRequest = cloudAuthRequestFactory.get(SocialTypeEnum.valueOfType(type).getSource());
+        AuthRequest authRequest = bizAuthRequestFactory.get(SocialTypeEnum.valueOfType(type).getSource());
         AuthCallback authCallback = AuthCallback.builder().code(code).state(state).build();
         AuthResponse<?> authResponse = authRequest.login(authCallback);
         log.info("[getAuthUser][请求社交平台 type({}) request({}) response({})]", type,

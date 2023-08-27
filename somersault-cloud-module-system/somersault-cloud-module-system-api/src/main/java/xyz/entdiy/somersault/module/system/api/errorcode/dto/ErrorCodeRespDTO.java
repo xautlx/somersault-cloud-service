@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 /**
  * 错误码的 Response DTO
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 public class ErrorCodeRespDTO {

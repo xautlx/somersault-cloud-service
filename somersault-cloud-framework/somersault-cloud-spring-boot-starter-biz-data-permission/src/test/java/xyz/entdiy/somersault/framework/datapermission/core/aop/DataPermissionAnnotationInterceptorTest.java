@@ -17,7 +17,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link DataPermissionAnnotationInterceptor} 的单元测试
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class DataPermissionAnnotationInterceptorTest extends BaseMockitoUnitTest {
 

@@ -15,7 +15,7 @@ import lombok.extern.slf4j.Slf4j;
  *
  * 文档：<a href="https://opendocs.alipay.com/apis/02890k">扫码支付</a>
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Slf4j
 public class AlipayQrPayClient extends AbstractAlipayPayClient {

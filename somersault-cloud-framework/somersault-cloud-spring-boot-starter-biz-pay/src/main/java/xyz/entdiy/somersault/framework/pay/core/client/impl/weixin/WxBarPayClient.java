@@ -26,7 +26,7 @@ import static xyz.entdiy.somersault.framework.common.util.json.JsonUtils.toJsonS
  *
  * 文档：<a href="https://pay.weixin.qq.com/wiki/doc/api/micropay.php?chapter=9_10&index=1">付款码支付</a>
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Slf4j
 public class WxBarPayClient extends AbstractWxPayClient {

@@ -21,7 +21,7 @@ import java.util.Objects;
 /**
  * {@link JmReportTokenServiceI} 实现类，提供积木报表的 Token 校验、用户信息的查询等功能
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @RequiredArgsConstructor
 public class JmReportTokenServiceImpl implements JmReportTokenServiceI {
@@ -51,7 +51,7 @@ public class JmReportTokenServiceImpl implements JmReportTokenServiceI {
         HttpServletRequest request = ServletUtils.getRequest();
         String token = request.getHeader(JM_TOKEN_HEADER);
 
-        // 设置到 cloud 系统的 token
+        // 设置到 biz 系统的 token
         HttpHeaders headers = new HttpHeaders();
         headers.add(securityProperties.getTokenHeader(), String.format(AUTHORIZATION_FORMAT, token));
         return headers;

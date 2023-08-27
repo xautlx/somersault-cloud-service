@@ -9,7 +9,7 @@ import java.util.Set;
 /**
  * 多租户配置
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @ConfigurationProperties(prefix = "biz.tenant")
 @Data

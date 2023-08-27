@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * 参数配置 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface ConfigService {
 

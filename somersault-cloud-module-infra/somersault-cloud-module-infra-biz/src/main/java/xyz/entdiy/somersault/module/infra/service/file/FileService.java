@@ -7,7 +7,7 @@ import xyz.entdiy.somersault.module.infra.dal.dataobject.file.FileDO;
 /**
  * 文件 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface FileService {
 

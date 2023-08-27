@@ -10,7 +10,7 @@ import javax.validation.Valid;
 /**
  * 短信验证码 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface SmsCodeService {
 

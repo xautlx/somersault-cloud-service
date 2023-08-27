@@ -15,7 +15,7 @@ import static xyz.entdiy.somersault.framework.common.exception.enums.GlobalError
 /**
  * 演示 Filter，禁止用户发起写操作，避免影响测试数据
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class DemoFilter extends OncePerRequestFilter {
 

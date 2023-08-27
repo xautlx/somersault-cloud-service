@@ -12,7 +12,7 @@ import static xyz.entdiy.somersault.framework.common.util.date.DateUtils.TIME_ZO
 /**
  * 任务流程关联表
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  * @create 2022-05-09 10:33
  */
 @Data

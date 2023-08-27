@@ -9,4 +9,5 @@ spring:
     active: local
 
 server:
-  port: 48080
+  # 环境变量动态定义以支持容器化单机部署多个实例
+  port: ${SERVER_PORT:48080}

@@ -35,7 +35,7 @@ import static xyz.entdiy.somersault.framework.common.util.date.DateUtils.TIME_ZO
  * <p>
  * 参见 https://cloud.tencent.com/document/product/382/52077
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class TencentSmsClient extends AbstractSmsClient {
 

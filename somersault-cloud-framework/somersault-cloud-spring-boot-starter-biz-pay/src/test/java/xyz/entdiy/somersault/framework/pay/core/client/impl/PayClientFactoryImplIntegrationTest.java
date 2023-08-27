@@ -19,7 +19,7 @@ import java.io.FileNotFoundException;
 /**
  * {@link PayClientFactoryImpl} 的集成测试
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Disabled
 public class PayClientFactoryImplIntegrationTest {

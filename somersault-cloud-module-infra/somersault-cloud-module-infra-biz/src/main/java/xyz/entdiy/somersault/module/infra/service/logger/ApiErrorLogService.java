@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * API 错误日志 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface ApiErrorLogService {
 

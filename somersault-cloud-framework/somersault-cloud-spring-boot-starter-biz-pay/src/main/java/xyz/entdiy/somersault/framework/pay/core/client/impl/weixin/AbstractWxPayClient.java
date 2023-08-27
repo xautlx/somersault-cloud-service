@@ -37,7 +37,7 @@ import static xyz.entdiy.somersault.framework.pay.core.client.impl.weixin.WxPayC
 /**
  * 微信支付抽象类，实现微信统一的接口、以及部分实现（退款）
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Slf4j
 public abstract class AbstractWxPayClient extends AbstractPayClient<WxPayClientConfig> {

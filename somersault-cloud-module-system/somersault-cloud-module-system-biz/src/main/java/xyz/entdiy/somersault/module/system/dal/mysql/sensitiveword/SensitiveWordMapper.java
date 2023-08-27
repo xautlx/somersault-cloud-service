@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * 敏感词 Mapper
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface SensitiveWordMapper extends BaseMapperX<SensitiveWordDO> {

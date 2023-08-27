@@ -12,7 +12,7 @@ import xyz.entdiy.somersault.module.infra.dal.dataobject.db.DataSourceConfigDO;
 /**
  * 数据源配置 Convert
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface DataSourceConfigConvert {

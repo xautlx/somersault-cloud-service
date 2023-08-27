@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 /**
  * 渠道支付订单 Response DTO
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 public class PayOrderRespDTO {

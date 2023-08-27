@@ -13,7 +13,8 @@ import javax.validation.constraints.Size;
 @EqualsAndHashCode(callSuper = true)
 public class ConfigCreateReqVO extends ConfigBaseVO {
 
-    @Schema(description = "参数键名", requiredMode = Schema.RequiredMode.REQUIRED)    @NotBlank(message = "参数键名长度不能为空")
+    @Schema(description = "参数键名", requiredMode = Schema.RequiredMode.REQUIRED)
+    @NotBlank(message = "参数键名长度不能为空")
     @Size(max = 100, message = "参数键名长度不能超过100个字符")
     private String key;
 

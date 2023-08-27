@@ -17,7 +17,7 @@ import static xyz.entdiy.somersault.framework.common.util.collection.SetUtils.as
 /**
  * 岗位 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface PostService {
 

@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * Tenant 框架 Service 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @RequiredArgsConstructor
 public class TenantFrameworkServiceImpl implements TenantFrameworkService {

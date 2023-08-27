@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * 敏感词 Convert
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface SensitiveWordConvert {

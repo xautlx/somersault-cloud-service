@@ -31,7 +31,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
 * {@link NotifyMessageServiceImpl} 的单元测试类
 *
-* @author entdiy.xyz
+* @author theMonkeyKing
 */
 @Import(NotifyMessageServiceImpl.class)
 public class NotifyMessageServiceImplTest extends BaseDbUnitTest {

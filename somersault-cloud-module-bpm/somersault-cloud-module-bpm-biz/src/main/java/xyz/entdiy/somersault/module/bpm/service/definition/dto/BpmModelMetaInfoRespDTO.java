@@ -7,7 +7,7 @@ import lombok.Data;
  * BPM 流程 MetaInfo Response DTO
  * 主要用于 { Model#setMetaInfo(String)} 的存储
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 public class BpmModelMetaInfoRespDTO {

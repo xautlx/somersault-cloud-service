@@ -9,7 +9,7 @@ import lombok.Data;
  * 腾讯云短信配置实现类
  * 腾讯云发送短信时，需要额外的参数 sdkAppId,
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 public class TencentSmsChannelProperties extends SmsChannelProperties {

@@ -24,8 +24,8 @@ import static xyz.entdiy.somersault.framework.security.core.util.SecurityFramewo
 /**
  * OA 请假申请 Controller，用于演示自己存储数据，接入工作流的例子
  *
- * @author entdiy.xyz
- * @author entdiy.xyz
+ * @author theMonkeyKing
+ * @author theMonkeyKing
  */
 @Tag(name = "管理后台 - OA 请假申请")
 @RestController

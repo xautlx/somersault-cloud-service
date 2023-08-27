@@ -10,7 +10,7 @@ import xyz.entdiy.somersault.framework.sms.core.enums.SmsFrameworkErrorCodeConst
  *
  * 参见 https://help.aliyun.com/document_detail/101346.htm 文档
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class AliyunSmsCodeMapping implements SmsCodeMapping {
 

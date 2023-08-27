@@ -3,7 +3,7 @@ package xyz.entdiy.somersault.framework.operatelog.core.service;
 /**
  * 操作日志 Framework Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface OperateLogFrameworkService {
 

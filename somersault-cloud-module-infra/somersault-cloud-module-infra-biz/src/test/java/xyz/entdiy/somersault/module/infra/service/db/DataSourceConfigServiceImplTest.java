@@ -36,7 +36,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link DataSourceConfigServiceImpl} 的单元测试类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Import(DataSourceConfigServiceImpl.class)
 public class DataSourceConfigServiceImplTest extends BaseDbUnitTest {

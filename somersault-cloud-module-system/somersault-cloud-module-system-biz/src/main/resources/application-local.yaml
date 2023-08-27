@@ -61,3 +61,6 @@ biz:
     enable: false
   error-code: # 错误码相关配置项
     enable: false
+  env:
+    # 各自开发人员可以设置为自己的姓名全拼，gateway优先路由tag匹配注册服务，调用本地运行应用
+    tag: theMonkeyKing

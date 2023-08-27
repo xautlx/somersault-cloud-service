@@ -20,7 +20,7 @@ import static xyz.entdiy.somersault.framework.common.exception.enums.GlobalError
  *
  * 在功能上，和 somersault-cloud-spring-boot-starter-web 的 GlobalExceptionHandler 类是一致的
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Component
 @Order(-1) // 保证优先级高于默认的 Spring Cloud Gateway 的 ErrorWebExceptionHandler 实现

@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * 用户组 Convert
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface BpmUserGroupConvert {

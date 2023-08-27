@@ -13,8 +13,8 @@ import java.util.Map;
 /**
  * 流程任务实例 Service 接口
  *
- * @author entdiy.xyz
- * @author entdiy.xyz
+ * @author theMonkeyKing
+ * @author theMonkeyKing
  */
 public interface BpmTaskService {
 

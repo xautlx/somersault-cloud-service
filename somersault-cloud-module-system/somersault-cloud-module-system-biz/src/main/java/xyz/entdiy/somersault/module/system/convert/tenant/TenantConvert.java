@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * 租户 Convert
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface TenantConvert {

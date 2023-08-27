@@ -40,7 +40,7 @@ import static xyz.entdiy.somersault.framework.common.util.date.DateUtils.TIME_ZO
 /**
  * 阿里短信客户端的实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  * @since 2021/1/25 14:17
  */
 @Slf4j
@@ -151,7 +151,7 @@ public class AliyunSmsClient extends AbstractSmsClient {
      *
      * 参见 https://help.aliyun.com/document_detail/101867.html 文档
      *
-     * @author entdiy.xyz
+     * @author theMonkeyKing
      */
     @Data
     public static class SmsReceiveStatus {

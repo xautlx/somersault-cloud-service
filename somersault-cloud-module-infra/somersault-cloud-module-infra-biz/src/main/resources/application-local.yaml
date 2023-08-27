@@ -39,8 +39,6 @@ logging:
 
 # 框架配置项，设置当前项目所有自定义的配置
 biz:
-  env: # 多环境的配置项
-    tag: ${HOSTNAME}
   security:
     mock-enable: true
   xss:
@@ -53,3 +51,6 @@ biz:
   error-code: # 错误码相关配置项
     enable: false
   demo: false # 关闭演示模式
+  env:
+    # 各自开发人员可以设置为自己的姓名全拼，gateway优先路由tag匹配注册服务，调用本地运行应用
+    tag: theMonkeyKing

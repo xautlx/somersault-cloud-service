@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 /**
  * Collection 工具类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class CollectionUtils {
 

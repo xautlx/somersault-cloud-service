@@ -36,7 +36,7 @@ import static xyz.entdiy.somersault.module.system.enums.ErrorCodeConstants.*;
 /**
  * 短信模板 Service 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  * @since 2021/1/25 9:25
  */
 @Service

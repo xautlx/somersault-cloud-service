@@ -17,7 +17,8 @@ public class ConfigRespVO extends ConfigBaseVO {
     @Schema(description = "参数配置序号", requiredMode = Schema.RequiredMode.REQUIRED, example = "1024")
     private Long id;
 
-    @Schema(description = "参数键名", requiredMode = Schema.RequiredMode.REQUIRED)    @NotBlank(message = "参数键名长度不能为空")
+    @Schema(description = "参数键名", requiredMode = Schema.RequiredMode.REQUIRED)
+    @NotBlank(message = "参数键名长度不能为空")
     @Size(max = 100, message = "参数键名长度不能超过100个字符")
     private String key;
 

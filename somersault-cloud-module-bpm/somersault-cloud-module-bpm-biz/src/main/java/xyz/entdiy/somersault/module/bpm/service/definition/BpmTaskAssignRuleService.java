@@ -14,7 +14,7 @@ import java.util.Set;
 /**
  * BPM 任务分配规则 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface BpmTaskAssignRuleService {
 

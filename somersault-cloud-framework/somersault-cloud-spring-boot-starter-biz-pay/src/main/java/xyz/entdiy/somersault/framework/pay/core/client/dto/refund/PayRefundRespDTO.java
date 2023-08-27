@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 /**
  * 渠道退款订单 Response DTO
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 public class PayRefundRespDTO {

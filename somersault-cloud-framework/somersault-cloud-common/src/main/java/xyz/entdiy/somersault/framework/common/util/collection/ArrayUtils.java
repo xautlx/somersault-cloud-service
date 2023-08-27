@@ -13,7 +13,7 @@ import static xyz.entdiy.somersault.framework.common.util.collection.CollectionU
 /**
  * Array 工具类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class ArrayUtils {
 

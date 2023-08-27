@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * 短信发送 Response DTO
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 public class SmsSendRespDTO {

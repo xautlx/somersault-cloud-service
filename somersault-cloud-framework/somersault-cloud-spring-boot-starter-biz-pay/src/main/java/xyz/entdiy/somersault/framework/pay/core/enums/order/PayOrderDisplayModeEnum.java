@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * 支付 UI 展示模式
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Getter
 @AllArgsConstructor

@@ -9,7 +9,7 @@ import ${PageResultClassName};
 /**
  * ${table.classComment} Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface ${table.className}Service {
 

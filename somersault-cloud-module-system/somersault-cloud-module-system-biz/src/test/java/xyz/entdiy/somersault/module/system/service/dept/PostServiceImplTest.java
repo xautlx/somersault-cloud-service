@@ -30,7 +30,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * {@link PostServiceImpl} 的单元测试类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Import(PostServiceImpl.class)
 public class PostServiceImplTest extends BaseDbUnitTest {

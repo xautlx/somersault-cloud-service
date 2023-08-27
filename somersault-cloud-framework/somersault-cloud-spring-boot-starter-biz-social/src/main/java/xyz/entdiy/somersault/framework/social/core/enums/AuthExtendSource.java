@@ -8,7 +8,7 @@ import com.xingyuv.jushauth.request.AuthDefaultRequest;
  *
  * 默认配置 {@link com.xingyuv.jushauth.config.AuthDefaultSource}
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public enum AuthExtendSource implements AuthSource {
 

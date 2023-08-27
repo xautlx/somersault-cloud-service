@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 专属于 web 包的工具类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class WebFrameworkUtils {
 

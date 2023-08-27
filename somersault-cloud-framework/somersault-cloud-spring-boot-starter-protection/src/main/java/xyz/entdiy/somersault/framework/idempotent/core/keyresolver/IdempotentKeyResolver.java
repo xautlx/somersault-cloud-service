@@ -6,7 +6,7 @@ import org.aspectj.lang.JoinPoint;
 /**
  * 幂等 Key 解析器接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface IdempotentKeyResolver {
 

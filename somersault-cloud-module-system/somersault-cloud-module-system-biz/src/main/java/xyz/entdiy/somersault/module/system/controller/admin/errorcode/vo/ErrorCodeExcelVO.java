@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 /**
  * 错误码 Excel VO
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 public class ErrorCodeExcelVO {

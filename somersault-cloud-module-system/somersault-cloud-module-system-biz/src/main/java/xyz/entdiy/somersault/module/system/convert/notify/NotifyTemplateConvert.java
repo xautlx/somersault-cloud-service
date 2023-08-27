@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * 站内信模版 Convert
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface NotifyTemplateConvert {

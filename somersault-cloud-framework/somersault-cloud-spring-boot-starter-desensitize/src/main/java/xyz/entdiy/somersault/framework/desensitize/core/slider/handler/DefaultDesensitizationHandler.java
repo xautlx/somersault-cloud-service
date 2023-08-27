@@ -5,7 +5,7 @@ import xyz.entdiy.somersault.framework.desensitize.core.slider.annotation.Slider
 /**
  * {@link SliderDesensitize} 的脱敏处理器
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class DefaultDesensitizationHandler extends AbstractSliderDesensitizationHandler<SliderDesensitize> {
     @Override

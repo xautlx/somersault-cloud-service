@@ -5,7 +5,7 @@ import xyz.entdiy.somersault.framework.desensitize.core.regex.annotation.RegexDe
 /**
  * {@link RegexDesensitize} 的正则脱敏处理器
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class DefaultRegexDesensitizationHandler extends AbstractRegexDesensitizationHandler<RegexDesensitize> {
 

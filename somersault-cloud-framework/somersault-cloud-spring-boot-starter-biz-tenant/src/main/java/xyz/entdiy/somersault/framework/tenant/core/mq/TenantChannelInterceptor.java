@@ -14,7 +14,7 @@ import static xyz.entdiy.somersault.framework.web.core.util.WebFrameworkUtils.HE
  * 多租户的 {@link ChannelInterceptor} 实现类
  * 发送消息时，设置租户编号到 Header 上
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class TenantChannelInterceptor implements ChannelInterceptor {
 

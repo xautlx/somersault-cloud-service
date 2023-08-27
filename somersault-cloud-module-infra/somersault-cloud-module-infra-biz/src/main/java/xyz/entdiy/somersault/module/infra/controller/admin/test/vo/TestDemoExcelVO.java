@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 /**
  * 字典类型 Excel VO
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 public class TestDemoExcelVO {

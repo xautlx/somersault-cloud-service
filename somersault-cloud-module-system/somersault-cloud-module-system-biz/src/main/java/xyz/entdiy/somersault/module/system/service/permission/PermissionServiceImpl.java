@@ -39,7 +39,7 @@ import static xyz.entdiy.somersault.framework.common.util.json.JsonUtils.toJsonS
 /**
  * 权限 Service 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Service
 @Slf4j

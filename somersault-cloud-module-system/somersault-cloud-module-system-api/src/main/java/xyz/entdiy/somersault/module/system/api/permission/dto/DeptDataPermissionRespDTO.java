@@ -8,7 +8,7 @@ import java.util.Set;
 /**
  * 部门的数据权限 Response DTO
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 public class DeptDataPermissionRespDTO {

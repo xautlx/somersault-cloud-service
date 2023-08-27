@@ -14,7 +14,7 @@ import javax.validation.constraints.NotNull;
 /**
  * 统一 退款 Request DTO
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Accessors(chain = true)
 @Builder

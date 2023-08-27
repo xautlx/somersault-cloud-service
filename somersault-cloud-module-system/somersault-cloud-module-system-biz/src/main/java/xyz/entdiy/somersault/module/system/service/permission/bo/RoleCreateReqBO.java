@@ -9,7 +9,7 @@ import javax.validation.constraints.Size;
 /**
  * 角色创建 Request BO
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 public class RoleCreateReqBO {

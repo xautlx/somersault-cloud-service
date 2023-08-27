@@ -5,7 +5,7 @@ import xyz.entdiy.somersault.module.system.dal.dataobject.oauth2.OAuth2AccessTok
 /**
  * System Redis Key 枚举类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface RedisKeyConstants {
 

@@ -14,7 +14,7 @@ import java.util.Map;
 /**
  * {@link feign.Feign} 工具类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class FeignUtils {
 

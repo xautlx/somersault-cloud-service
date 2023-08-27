@@ -25,7 +25,7 @@ import ${DictConvertClassName};
 /**
  * ${table.classComment} Excel VO
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 public class ${sceneEnum.prefixClass}${table.className}ExcelVO {

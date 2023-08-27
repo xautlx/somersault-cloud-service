@@ -23,7 +23,7 @@ import java.util.Objects;
 /**
  * 流程模型 Convert
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface BpmModelConvert {

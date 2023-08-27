@@ -13,7 +13,7 @@
 // * 解决 SpringFox 与 SpringBoot 2.6.x 不兼容的问题
 // * 该问题对应的 issue 为 https://github.com/springfox/springfox/issues/3462
 // *
-// * @author entdiy.xyz
+// * @author theMonkeyKing
 // */
 //public class SpringFoxHandlerProviderBeanPostProcessor implements BeanPostProcessor {
 //

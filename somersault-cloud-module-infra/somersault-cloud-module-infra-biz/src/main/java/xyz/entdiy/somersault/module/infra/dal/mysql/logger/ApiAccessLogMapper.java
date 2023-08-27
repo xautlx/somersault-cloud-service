@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * API 访问日志 Mapper
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface ApiAccessLogMapper extends BaseMapperX<ApiAccessLogDO> {

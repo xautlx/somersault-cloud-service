@@ -11,7 +11,7 @@ import javax.validation.Valid;
 /**
  * GoView 项目 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface GoViewProjectService {
 

@@ -5,7 +5,7 @@ import xyz.entdiy.somersault.framework.common.enums.RpcConstants;
 /**
  * API 相关的枚举
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class ApiConstants {
 

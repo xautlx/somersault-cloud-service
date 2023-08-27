@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 /**
  * API 错误日志
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 public class ApiErrorLog {

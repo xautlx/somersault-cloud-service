@@ -8,7 +8,8 @@ import lombok.Data;
 @Data
 public class DatabaseTableRespVO {
 
-    @Schema(description = "表名称", requiredMode = Schema.RequiredMode.REQUIRED)    private String name;
+    @Schema(description = "表名称", requiredMode = Schema.RequiredMode.REQUIRED)
+    private String name;
 
     @Schema(description = "表描述", requiredMode = Schema.RequiredMode.REQUIRED)
     private String comment;

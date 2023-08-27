@@ -3,7 +3,7 @@ package xyz.entdiy.somersault.framework.file.core.client.db;
 /**
  * 文件内容 Framework DAO 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface DBFileContentFrameworkDAO {
 

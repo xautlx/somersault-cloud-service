@@ -13,7 +13,7 @@ import java.lang.annotation.Target;
 /**
  * 滑动脱敏注解
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Documented
 @Target({ElementType.FIELD, ElementType.ANNOTATION_TYPE})

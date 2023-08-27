@@ -1,6 +1,6 @@
 package xyz.entdiy.somersault.module.infra.test;
 
-import xyz.entdiy.somersault.framework.redis.config.CloudRedisAutoConfiguration;
+import xyz.entdiy.somersault.framework.redis.config.BizRedisAutoConfiguration;
 import org.redisson.spring.starter.RedissonAutoConfiguration;
 import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,7 +14,7 @@ public class BaseRedisIntegrationTest {
     @Import({
             // Redis 配置类
             RedisAutoConfiguration.class, // Spring Redis 自动配置类
-            CloudRedisAutoConfiguration.class, // 自己的 Redis 配置类
+            BizRedisAutoConfiguration.class, // 自己的 Redis 配置类
             RedissonAutoConfiguration.class, // Redisson 自动高配置类
     })
     public static class Application {

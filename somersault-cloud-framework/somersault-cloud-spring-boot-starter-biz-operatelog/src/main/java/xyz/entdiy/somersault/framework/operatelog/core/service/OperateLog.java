@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * 操作日志
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 public class OperateLog {

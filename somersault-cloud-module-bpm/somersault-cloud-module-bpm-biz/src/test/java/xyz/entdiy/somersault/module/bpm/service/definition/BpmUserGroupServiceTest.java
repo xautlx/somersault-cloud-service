@@ -24,7 +24,7 @@ import static xyz.entdiy.somersault.module.bpm.enums.ErrorCodeConstants.USER_GRO
 /**
  * {@link BpmUserGroupServiceImpl} 的单元测试类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Import(BpmUserGroupServiceImpl.class)
 public class BpmUserGroupServiceTest extends BaseDbUnitTest {

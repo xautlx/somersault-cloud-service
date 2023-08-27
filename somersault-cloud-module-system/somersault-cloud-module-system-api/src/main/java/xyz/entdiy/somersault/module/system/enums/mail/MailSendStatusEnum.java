@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * 邮件的发送状态枚举
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  * @since 2022/4/10 13:39
  */
 @Getter

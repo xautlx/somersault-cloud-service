@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * 代码生成模板类型
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @AllArgsConstructor
 @Getter

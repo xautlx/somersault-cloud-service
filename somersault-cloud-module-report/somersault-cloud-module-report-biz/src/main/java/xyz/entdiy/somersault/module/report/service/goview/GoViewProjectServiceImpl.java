@@ -19,7 +19,7 @@ import static xyz.entdiy.somersault.module.report.enums.ErrorCodeConstants.GO_VI
 /**
  * GoView 项目 Service 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Service
 @Validated

@@ -20,9 +20,9 @@ COPY --from=skywalking /skywalking/agent /app/skywalking
 
 RUN mkdir arthas
 WORKDIR /app/arthas
-ADD arthas-packaging-3.6.9-bin.zip /app/arthas
-RUN unzip arthas-packaging-3.6.9-bin.zip
-RUN rm -fr arthas-packaging-3.6.9-bin.zip
+ADD https://maven.aliyun.com/repository/public/com/taobao/arthas/arthas-packaging/3.6.9/arthas-packaging-3.6.9-bin.zip /app/arthas
+#RUN unzip arthas-packaging-3.6.9-bin.zip
+#RUN rm -fr arthas-packaging-3.6.9-bin.zip
 RUN ls -lh /app/arthas
 WORKDIR /app
 

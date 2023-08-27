@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * 错误码的配置属性类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @ConfigurationProperties("biz.error-code")
 @Data

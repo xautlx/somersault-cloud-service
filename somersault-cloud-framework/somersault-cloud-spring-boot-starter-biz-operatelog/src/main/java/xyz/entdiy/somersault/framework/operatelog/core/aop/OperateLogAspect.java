@@ -48,7 +48,7 @@ import static xyz.entdiy.somersault.framework.common.exception.enums.GlobalError
  * <p>
  * 但是，如果声明 @OperateLog 注解时，将 enable 属性设置为 false 时，强制不记录。
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Aspect
 @Slf4j

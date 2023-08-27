@@ -19,7 +19,7 @@ import lombok.Data;
  *
  * 由于 JustAuth 定位是面向 Web 为主的三方登录，所以微信小程序只能自己封装
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class AuthWeChatMiniAppRequest extends AuthDefaultRequest {
 

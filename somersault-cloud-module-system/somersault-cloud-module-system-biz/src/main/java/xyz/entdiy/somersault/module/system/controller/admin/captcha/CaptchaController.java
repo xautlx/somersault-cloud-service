@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 验证码
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Tag(name = "管理后台 - 验证码")
 @RestController("adminCaptchaController")

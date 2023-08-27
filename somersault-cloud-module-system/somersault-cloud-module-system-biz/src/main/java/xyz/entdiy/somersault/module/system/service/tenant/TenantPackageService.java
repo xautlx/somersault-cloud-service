@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * 租户套餐 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface TenantPackageService {
 

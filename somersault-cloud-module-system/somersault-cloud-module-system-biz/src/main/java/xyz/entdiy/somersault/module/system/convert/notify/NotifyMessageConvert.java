@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * 站内信 Convert
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface NotifyMessageConvert {

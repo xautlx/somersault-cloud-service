@@ -18,7 +18,7 @@ import static xyz.entdiy.somersault.framework.common.util.json.JsonUtils.toJsonS
 /**
  * 支付客户端的抽象类，提供模板方法，减少子类的冗余代码
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Slf4j
 public abstract class AbstractPayClient<Config extends PayClientConfig> implements PayClient {

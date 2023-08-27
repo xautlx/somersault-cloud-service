@@ -12,7 +12,7 @@ import java.util.*;
 /**
  * 部门 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface DeptService {
 

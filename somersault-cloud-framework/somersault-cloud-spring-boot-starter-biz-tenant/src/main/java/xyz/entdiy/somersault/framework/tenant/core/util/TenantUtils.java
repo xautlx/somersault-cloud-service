@@ -10,7 +10,7 @@ import static xyz.entdiy.somersault.framework.web.core.util.WebFrameworkUtils.HE
 /**
  * 多租户 Util
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class TenantUtils {
 

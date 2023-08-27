@@ -5,7 +5,7 @@ import xyz.entdiy.somersault.framework.sms.core.property.SmsChannelProperties;
 /**
  * 短信客户端的工厂接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  * @since 2021/1/28 14:01
  */
 public interface SmsClientFactory {

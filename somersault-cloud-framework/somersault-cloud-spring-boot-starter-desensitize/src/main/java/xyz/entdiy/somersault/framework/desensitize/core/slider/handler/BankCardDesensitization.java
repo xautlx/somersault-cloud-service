@@ -5,7 +5,7 @@ import xyz.entdiy.somersault.framework.desensitize.core.slider.annotation.BankCa
 /**
  * {@link BankCardDesensitize} 的脱敏处理器
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class BankCardDesensitization extends AbstractSliderDesensitizationHandler<BankCardDesensitize> {
 

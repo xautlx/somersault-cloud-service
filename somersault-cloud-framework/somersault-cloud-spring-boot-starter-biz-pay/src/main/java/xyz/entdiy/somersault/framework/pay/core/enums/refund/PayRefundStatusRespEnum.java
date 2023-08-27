@@ -8,7 +8,7 @@ import java.util.Objects;
 /**
  * 渠道的退款状态枚举
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Getter
 @AllArgsConstructor

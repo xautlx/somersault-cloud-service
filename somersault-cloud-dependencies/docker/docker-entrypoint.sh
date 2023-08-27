@@ -11,7 +11,7 @@ JAVA_OPTS="${JAVA_OPTS} -Djava.security.egd=file:/dev/./urandom -Drocketmq.clien
 
 # 预留远程调试参数处理，以便远程问题排查分析
 if [[ "${APP_DEBUG}" == "y" ]]; then
-  JAVA_OPTS="${JAVA_OPTS} -Xdebug -Xrunjdwp:transport=dt_socket,address=9555,server=y,suspend=n"
+  JAVA_OPTS="${JAVA_OPTS} -Xdebug -Xrunjdwp:transport=dt_socket,address=${DEBUG_PORT},server=y,suspend=n"
 fi
 
 java -server $JAVA_OPTS $JAVA_AGENT -jar $(find . -iname *.jar)

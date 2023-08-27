@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * 字典类型 Convert
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface TestDemoConvert {

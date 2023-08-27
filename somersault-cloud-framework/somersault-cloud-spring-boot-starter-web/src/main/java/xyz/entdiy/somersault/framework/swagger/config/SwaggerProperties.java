@@ -8,7 +8,7 @@ import javax.validation.constraints.NotEmpty;
 /**
  * Swagger 配置属性
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @ConfigurationProperties("biz.swagger")
 @Data

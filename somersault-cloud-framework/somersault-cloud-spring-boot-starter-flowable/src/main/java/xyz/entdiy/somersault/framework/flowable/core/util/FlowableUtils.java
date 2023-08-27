@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Flowable 相关的工具方法
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class FlowableUtils {
 

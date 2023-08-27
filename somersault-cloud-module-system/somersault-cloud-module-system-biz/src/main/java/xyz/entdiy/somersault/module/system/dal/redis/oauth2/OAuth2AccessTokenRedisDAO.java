@@ -19,7 +19,7 @@ import static xyz.entdiy.somersault.module.system.dal.redis.RedisKeyConstants.OA
 /**
  * {@link OAuth2AccessTokenDO} 的 RedisDAO
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Repository
 public class OAuth2AccessTokenRedisDAO {

@@ -29,7 +29,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * {@link MailTemplateServiceImpl} 的单元测试类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Import(MailTemplateServiceImpl.class)
 public class MailTemplateServiceImplTest extends BaseDbUnitTest {

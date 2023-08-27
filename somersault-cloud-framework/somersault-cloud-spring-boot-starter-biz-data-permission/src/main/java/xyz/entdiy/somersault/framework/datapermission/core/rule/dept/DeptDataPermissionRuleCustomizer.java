@@ -3,7 +3,7 @@ package xyz.entdiy.somersault.framework.datapermission.core.rule.dept;
 /**
  * {@link DeptDataPermissionRule} 的自定义配置接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @FunctionalInterface
 public interface DeptDataPermissionRuleCustomizer {

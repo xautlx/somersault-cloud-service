@@ -8,7 +8,7 @@ import lombok.Getter;
  *
  * 用于实现数据级别的权限
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Getter
 @AllArgsConstructor

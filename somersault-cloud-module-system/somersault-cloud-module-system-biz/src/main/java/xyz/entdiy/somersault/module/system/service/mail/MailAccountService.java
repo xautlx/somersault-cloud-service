@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * 邮箱账号 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  * @since 2022-03-21
  */
 public interface MailAccountService {

@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * 流程实例的创建 Request DTO
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 public class BpmProcessInstanceCreateReqDTO {

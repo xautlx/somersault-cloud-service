@@ -22,7 +22,7 @@ import static xyz.entdiy.somersault.module.infra.enums.ErrorCodeConstants.API_ER
 /**
  * API 错误日志 Service 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Service
 @Validated

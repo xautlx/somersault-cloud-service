@@ -11,7 +11,7 @@ import javax.validation.constraints.NotNull;
 /**
  * 社交绑定 Request DTO，使用 code 授权码
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 public class SocialUserUnbindReqDTO {

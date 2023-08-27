@@ -13,7 +13,7 @@ import javax.validation.constraints.NotNull;
 /**
  * 取消绑定社交用户 Request DTO
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 @NoArgsConstructor

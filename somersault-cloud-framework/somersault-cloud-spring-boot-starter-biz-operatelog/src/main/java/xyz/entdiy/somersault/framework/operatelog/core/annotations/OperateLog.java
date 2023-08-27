@@ -12,7 +12,7 @@ import java.lang.annotation.Target;
 /**
  * 操作日志注解
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Target({ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)

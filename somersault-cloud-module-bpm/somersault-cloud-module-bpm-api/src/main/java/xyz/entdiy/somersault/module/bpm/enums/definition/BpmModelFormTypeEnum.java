@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * BPM 模型的表单类型的枚举
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Getter
 @AllArgsConstructor

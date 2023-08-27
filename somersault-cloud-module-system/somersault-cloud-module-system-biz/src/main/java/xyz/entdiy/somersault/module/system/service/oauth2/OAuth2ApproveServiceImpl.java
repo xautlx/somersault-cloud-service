@@ -20,7 +20,7 @@ import static xyz.entdiy.somersault.framework.common.util.collection.CollectionU
 /**
  * OAuth2 批准 Service 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Service
 @Validated

@@ -8,7 +8,7 @@ import javax.validation.constraints.NotNull;
 /**
  * 邮箱发送消息
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 public class MailSendMessage {

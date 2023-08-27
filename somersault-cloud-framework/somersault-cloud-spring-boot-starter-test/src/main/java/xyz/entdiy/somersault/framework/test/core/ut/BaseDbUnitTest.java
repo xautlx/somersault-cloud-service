@@ -1,7 +1,7 @@
 package xyz.entdiy.somersault.framework.test.core.ut;
 
-import xyz.entdiy.somersault.framework.datasource.config.CloudDataSourceAutoConfiguration;
-import xyz.entdiy.somersault.framework.mybatis.config.CloudMybatisAutoConfiguration;
+import xyz.entdiy.somersault.framework.datasource.config.BizDataSourceAutoConfiguration;
+import xyz.entdiy.somersault.framework.mybatis.config.BizMybatisAutoConfiguration;
 import xyz.entdiy.somersault.framework.test.config.SqlInitializationTestConfiguration;
 import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure;
 import com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration;
@@ -18,7 +18,7 @@ import org.springframework.test.context.jdbc.Sql;
  *
  * 注意，Service 层同样适用。对于 Service 层的单元测试，我们针对自己模块的 Mapper 走的是 H2 内存数据库，针对别的模块的 Service 走的是 Mock 方法
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE, classes = BaseDbUnitTest.Application.class)
 @ActiveProfiles("unit-test") // 设置使用 application-unit-test 配置文件
@@ -27,13 +27,13 @@ public class BaseDbUnitTest {
 
     @Import({
             // DB 配置类
-            CloudDataSourceAutoConfiguration.class, // 自己的 DB 配置类
+            BizDataSourceAutoConfiguration.class, // 自己的 DB 配置类
             DataSourceAutoConfiguration.class, // Spring DB 自动配置类
             DataSourceTransactionManagerAutoConfiguration.class, // Spring 事务自动配置类
             DruidDataSourceAutoConfigure.class, // Druid 自动配置类
             SqlInitializationTestConfiguration.class, // SQL 初始化
             // MyBatis 配置类
-            CloudMybatisAutoConfiguration.class, // 自己的 MyBatis 配置类
+            BizMybatisAutoConfiguration.class, // 自己的 MyBatis 配置类
             MybatisPlusAutoConfiguration.class, // MyBatis 的自动配置类
             MybatisPlusJoinAutoConfiguration.class, // MyBatis 的Join配置类
     })

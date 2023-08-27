@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * 敏感词 Excel VO
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 public class SensitiveWordExcelVO {

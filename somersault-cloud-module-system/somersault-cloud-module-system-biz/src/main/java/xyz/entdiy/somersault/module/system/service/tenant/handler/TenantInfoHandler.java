@@ -6,7 +6,7 @@ import xyz.entdiy.somersault.module.system.dal.dataobject.tenant.TenantDO;
  * 租户信息处理
  * 目的：尽量减少租户逻辑耦合到系统中
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface TenantInfoHandler {
 

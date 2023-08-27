@@ -6,7 +6,7 @@ import lombok.Data;
 /**
  * 部门 Response DTO
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 public class DeptRespDTO {

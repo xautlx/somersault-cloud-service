@@ -6,7 +6,7 @@ import xyz.entdiy.somersault.framework.file.core.client.AbstractFileClient;
 /**
  * 基于 DB 存储的文件客户端的配置类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class DBFileClient extends AbstractFileClient<DBFileClientConfig> {
 

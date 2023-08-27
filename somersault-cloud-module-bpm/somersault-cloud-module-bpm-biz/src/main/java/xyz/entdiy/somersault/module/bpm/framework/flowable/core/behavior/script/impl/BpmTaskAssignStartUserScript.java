@@ -16,7 +16,7 @@ import java.util.Set;
 /**
  * 分配给发起人审批的 Script 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Component
 public class BpmTaskAssignStartUserScript implements BpmTaskAssignScript {

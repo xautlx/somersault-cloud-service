@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 /**
  * 字符串工具类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class StrUtils {
 

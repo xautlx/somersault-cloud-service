@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * 短信渠道 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface SmsChannelService {
 

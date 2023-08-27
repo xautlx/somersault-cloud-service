@@ -47,13 +47,13 @@ spring:
         master:
           name: somersault_cloud_biz
           url: jdbc:mysql://${MYSQL_MASTER_ADDR:127.0.0.1:3306}/${spring.datasource.dynamic.datasource.master.name}?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2b8
-          driver-class-name: com.mysql.jdbc.Driver
+          driver-class-name: com.mysql.cj.jdbc.Driver
           username: somersault_cloud
           password: ${MYSQL_PASSWORD:MySQLP@ssword4somersault_cloud}
         slave: # 模拟从库，可根据自己需要修改
           name: somersault_cloud_biz
           url: jdbc:mysql://${MYSQL_SLAVE_ADDR:127.0.0.1:3306}/${spring.datasource.dynamic.datasource.slave.name}?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2b8
-          driver-class-name: com.mysql.jdbc.Driver
+          driver-class-name: com.mysql.cj.jdbc.Driver
           username: somersault_cloud
           password: ${MYSQL_PASSWORD:MySQLP@ssword4somersault_cloud}
 

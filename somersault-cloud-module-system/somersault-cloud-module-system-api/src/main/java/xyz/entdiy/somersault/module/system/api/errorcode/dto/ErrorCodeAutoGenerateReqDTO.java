@@ -9,7 +9,7 @@ import javax.validation.constraints.NotNull;
 /**
  * 错误码自动生成 DTO
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 @Accessors(chain = true)

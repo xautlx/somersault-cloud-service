@@ -35,7 +35,7 @@ import static xyz.entdiy.somersault.module.system.enums.ErrorCodeConstants.SENSI
 /**
  * 敏感词 Service 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Service
 @Slf4j

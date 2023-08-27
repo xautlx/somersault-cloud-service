@@ -21,7 +21,7 @@ import java.util.List;
  * ErrorCodeAutoGenerator 的实现类
  * 目的是，扫描指定的 {@link #constantsClassList} 类，写入到 system 服务中
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @RequiredArgsConstructor
 @Slf4j

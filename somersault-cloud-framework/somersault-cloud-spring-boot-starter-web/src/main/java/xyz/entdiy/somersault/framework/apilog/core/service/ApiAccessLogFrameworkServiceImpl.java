@@ -12,7 +12,7 @@ import org.springframework.scheduling.annotation.Async;
  *
  * 基于 {@link ApiAccessLogApi} 远程服务，记录访问日志
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @RequiredArgsConstructor
 public class ApiAccessLogFrameworkServiceImpl implements ApiAccessLogFrameworkService {

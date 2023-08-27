@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * 邮件发送 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  * @since 2022-03-21
  */
 public interface MailSendService {

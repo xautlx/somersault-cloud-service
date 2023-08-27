@@ -1,2 +1,2 @@
-xyz.entdiy.somersault.framework.redis.config.CloudRedisAutoConfiguration
-xyz.entdiy.somersault.framework.redis.config.CloudCacheAutoConfiguration
+xyz.entdiy.somersault.framework.redis.config.BizRedisAutoConfiguration
+xyz.entdiy.somersault.framework.redis.config.BizCacheAutoConfiguration

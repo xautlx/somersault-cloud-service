@@ -12,7 +12,7 @@ import ${basePackage}.module.${table.moduleName}.dal.dataobject.${table.business
 /**
  * ${table.classComment} Convert
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface ${table.className}Convert {

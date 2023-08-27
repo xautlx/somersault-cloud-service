@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * Bpm 消息的枚举
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @AllArgsConstructor
 @Getter

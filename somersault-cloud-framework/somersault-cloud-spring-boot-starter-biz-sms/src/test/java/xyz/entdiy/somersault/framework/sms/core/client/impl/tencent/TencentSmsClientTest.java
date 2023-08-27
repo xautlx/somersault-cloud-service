@@ -38,7 +38,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link TencentSmsClient} 的单元测试
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class TencentSmsClientTest extends BaseMockitoUnitTest {
 

@@ -18,7 +18,7 @@ import static xyz.entdiy.somersault.module.system.enums.ErrorCodeConstants.OAUTH
 /**
  * OAuth2.0 授权码 Service 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Service
 @Validated

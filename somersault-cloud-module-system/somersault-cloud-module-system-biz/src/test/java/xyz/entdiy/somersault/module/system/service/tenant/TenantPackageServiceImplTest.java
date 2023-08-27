@@ -33,7 +33,7 @@ import static org.mockito.Mockito.when;
 /**
 * {@link TenantPackageServiceImpl} 的单元测试类
 *
-* @author entdiy.xyz
+* @author theMonkeyKing
 */
 @Import(TenantPackageServiceImpl.class)
 public class TenantPackageServiceImplTest extends BaseDbUnitTest {

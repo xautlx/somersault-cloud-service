@@ -33,7 +33,7 @@ import static xyz.entdiy.somersault.module.system.enums.ErrorCodeConstants.*;
 /**
  * 短信发送 Service 发送的实现
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Service
 public class SmsSendServiceImpl implements SmsSendService {

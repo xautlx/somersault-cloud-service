@@ -71,7 +71,8 @@ public class OAuth2ClientBaseVO {
     @Schema(description = "资源", example = "1024")
     private List<String> resourceIds;
 
-    @Schema(description = "附加信息")    private String additionalInformation;
+    @Schema(description = "附加信息")
+    private String additionalInformation;
 
     @AssertTrue(message = "附加信息必须是 JSON 格式")
     public boolean isAdditionalInformationJson() {

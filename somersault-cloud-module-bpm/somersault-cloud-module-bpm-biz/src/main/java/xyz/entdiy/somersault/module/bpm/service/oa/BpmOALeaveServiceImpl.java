@@ -25,8 +25,8 @@ import static xyz.entdiy.somersault.module.bpm.enums.ErrorCodeConstants.OA_LEAVE
 /**
  * OA 请假申请 Service 实现类
  *
- * @author entdiy.xyz
- * @author entdiy.xyz
+ * @author theMonkeyKing
+ * @author theMonkeyKing
  */
 @Service
 @Validated

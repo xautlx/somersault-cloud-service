@@ -3,7 +3,7 @@ package xyz.entdiy.somersault.module.system.service.member;
 /**
  * Member Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface MemberService {
 

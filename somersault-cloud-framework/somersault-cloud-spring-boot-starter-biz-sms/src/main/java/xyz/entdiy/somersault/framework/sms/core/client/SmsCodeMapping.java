@@ -11,7 +11,7 @@ import java.util.function.Function;
  * @see SmsCommonResult
  * @see SmsFrameworkErrorCodeConstants
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface SmsCodeMapping extends Function<String, ErrorCode> {
 }

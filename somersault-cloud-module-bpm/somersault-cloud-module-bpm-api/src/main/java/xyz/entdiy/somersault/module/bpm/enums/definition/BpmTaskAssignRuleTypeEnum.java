@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * BPM 任务分配规则的类型枚举
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Getter
 @AllArgsConstructor

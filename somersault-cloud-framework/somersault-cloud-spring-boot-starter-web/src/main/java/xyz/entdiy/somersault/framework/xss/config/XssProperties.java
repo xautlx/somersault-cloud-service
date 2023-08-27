@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Xss 配置属性
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @ConfigurationProperties(prefix = "biz.xss")
 @Validated

@@ -11,8 +11,8 @@ import javax.validation.Valid;
 /**
  * 请假申请 Service 接口
  *
- * @author entdiy.xyz
- * @author entdiy.xyz
+ * @author theMonkeyKing
+ * @author theMonkeyKing
  */
 public interface BpmOALeaveService {
 

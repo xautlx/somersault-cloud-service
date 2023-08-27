@@ -5,7 +5,7 @@ import xyz.entdiy.somersault.framework.desensitize.core.regex.annotation.EmailDe
 /**
  * {@link EmailDesensitize} 的脱敏处理器
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class EmailDesensitizationHandler extends AbstractRegexDesensitizationHandler<EmailDesensitize> {
 

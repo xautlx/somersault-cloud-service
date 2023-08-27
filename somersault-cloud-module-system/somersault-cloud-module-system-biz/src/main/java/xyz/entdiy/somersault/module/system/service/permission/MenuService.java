@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * 菜单 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface MenuService {
 

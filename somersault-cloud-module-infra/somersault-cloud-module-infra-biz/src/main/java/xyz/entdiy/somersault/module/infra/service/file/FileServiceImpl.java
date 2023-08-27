@@ -20,7 +20,7 @@ import static xyz.entdiy.somersault.module.infra.enums.ErrorCodeConstants.FILE_N
 /**
  * 文件 Service 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Service
 public class FileServiceImpl implements FileService {

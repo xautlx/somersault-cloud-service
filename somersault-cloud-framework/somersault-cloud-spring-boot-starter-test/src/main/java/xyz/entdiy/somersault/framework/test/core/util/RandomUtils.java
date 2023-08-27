@@ -21,7 +21,7 @@ import java.util.stream.Stream;
 /**
  * 随机工具类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class RandomUtils {
 

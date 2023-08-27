@@ -1,2 +1,2 @@
-xyz.entdiy.somersault.framework.datapermission.config.CloudDataPermissionAutoConfiguration
-xyz.entdiy.somersault.framework.datapermission.config.CloudDeptDataPermissionAutoConfiguration
+xyz.entdiy.somersault.framework.datapermission.config.BizDataPermissionAutoConfiguration
+xyz.entdiy.somersault.framework.datapermission.config.BizDeptDataPermissionAutoConfiguration

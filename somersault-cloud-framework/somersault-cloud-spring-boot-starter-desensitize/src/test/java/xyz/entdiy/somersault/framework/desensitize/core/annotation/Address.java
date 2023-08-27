@@ -16,7 +16,7 @@ import java.lang.annotation.Target;
  *
  * 用于 {@link DesensitizeTest} 测试使用
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Documented
 @Target({ElementType.FIELD})

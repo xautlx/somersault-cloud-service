@@ -8,7 +8,7 @@ import java.io.File;
 /**
  * 本地文件客户端
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class LocalFileClient extends AbstractFileClient<LocalFileClientConfig> {
 

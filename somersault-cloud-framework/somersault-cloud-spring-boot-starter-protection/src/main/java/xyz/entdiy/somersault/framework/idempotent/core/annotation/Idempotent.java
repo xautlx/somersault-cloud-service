@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * 幂等注解
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Target({ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)

@@ -12,7 +12,7 @@ import org.springframework.web.server.ServerWebExchange;
  *
  * copy from somersault-cloud-spring-boot-starter-security 的 SecurityFrameworkUtils 类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class SecurityFrameworkUtils {
 

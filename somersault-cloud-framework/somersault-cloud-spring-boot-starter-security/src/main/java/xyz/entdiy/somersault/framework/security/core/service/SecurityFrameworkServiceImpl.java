@@ -25,7 +25,7 @@ import static xyz.entdiy.somersault.framework.security.core.util.SecurityFramewo
 /**
  * 默认的 {@link SecurityFrameworkService} 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @AllArgsConstructor
 public class SecurityFrameworkServiceImpl implements SecurityFrameworkService {

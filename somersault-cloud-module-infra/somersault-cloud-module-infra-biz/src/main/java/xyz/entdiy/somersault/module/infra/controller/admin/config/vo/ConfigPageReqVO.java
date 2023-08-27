@@ -20,7 +20,8 @@ public class ConfigPageReqVO extends PageParam {
     @Schema(description = "数据源名称，模糊匹配", example = "名称")
     private String name;
 
-    @Schema(description = "参数键名，模糊匹配")    private String key;
+    @Schema(description = "参数键名，模糊匹配")
+    private String key;
 
     @Schema(description = "参数类型，参见 SysConfigTypeEnum 枚举", example = "1")
     private Integer type;

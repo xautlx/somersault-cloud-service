@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * 流程实例的状态
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Getter
 @AllArgsConstructor

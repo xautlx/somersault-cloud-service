@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * 基于 Redis 实现验证码的存储
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @NoArgsConstructor // 保证 aj-captcha 的 SPI 创建
 @AllArgsConstructor

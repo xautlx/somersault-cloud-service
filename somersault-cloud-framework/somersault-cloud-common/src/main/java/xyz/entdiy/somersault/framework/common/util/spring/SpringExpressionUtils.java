@@ -21,7 +21,7 @@ import java.util.Map;
 /**
  * Spring EL 表达式的工具类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class SpringExpressionUtils {
 
@@ -94,7 +94,7 @@ public class SpringExpressionUtils {
      * @param info              返回值
      * @param expressionStrings EL 表达式数组
      * @return Map<String, Object> 结果
-     * @author entdiy.xyz
+     * @author theMonkeyKing
      * @since 2023/6/18 11:20
      */
     // TODO @chenchen: 这个方法，和 parseExpressions 比较接近，是不是可以合并下；

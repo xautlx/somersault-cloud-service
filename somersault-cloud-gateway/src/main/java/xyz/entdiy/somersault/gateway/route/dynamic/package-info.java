@@ -5,6 +5,6 @@
  *
  * 使用方式：在 Nacos 修改 DataId 为 gateway-server.yaml 的配置，修改 spring.cloud.gateway.routes 配置项
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 package xyz.entdiy.somersault.gateway.route.dynamic;

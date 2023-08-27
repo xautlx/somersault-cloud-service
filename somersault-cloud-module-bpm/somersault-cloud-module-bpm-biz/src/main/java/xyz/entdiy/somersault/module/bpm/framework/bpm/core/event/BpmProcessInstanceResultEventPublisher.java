@@ -9,7 +9,7 @@ import javax.validation.Valid;
 /**
  * {@link BpmProcessInstanceResultEvent} 的生产者
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @AllArgsConstructor
 @Validated

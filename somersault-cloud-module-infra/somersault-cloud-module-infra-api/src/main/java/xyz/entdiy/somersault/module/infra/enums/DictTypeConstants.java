@@ -3,7 +3,7 @@ package xyz.entdiy.somersault.module.infra.enums;
 /**
  * Infra 字典类型的枚举类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface DictTypeConstants {
 

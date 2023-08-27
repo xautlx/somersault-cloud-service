@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * 租户 Mapper
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface TenantMapper extends BaseMapperX<TenantDO> {

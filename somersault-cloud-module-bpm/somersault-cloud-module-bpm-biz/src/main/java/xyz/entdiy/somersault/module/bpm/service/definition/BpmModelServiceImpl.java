@@ -40,9 +40,9 @@ import static xyz.entdiy.somersault.module.bpm.enums.ErrorCodeConstants.*;
  * Flowable流程模型实现
  * 主要进行 Flowable {@link Model} 的维护
  *
- * @author entdiy.xyz
- * @author entdiy.xyz
- * @author entdiy.xyz
+ * @author theMonkeyKing
+ * @author theMonkeyKing
+ * @author theMonkeyKing
  */
 @Service
 @Validated

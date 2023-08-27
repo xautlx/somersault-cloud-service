@@ -3,7 +3,7 @@ package xyz.entdiy.somersault.framework.errorcode.core.generator;
 /**
  * 错误码的自动生成器
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface ErrorCodeAutoGenerator {
 

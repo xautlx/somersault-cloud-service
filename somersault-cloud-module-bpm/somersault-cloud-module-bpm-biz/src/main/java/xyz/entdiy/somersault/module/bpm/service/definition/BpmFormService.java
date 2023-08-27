@@ -18,7 +18,7 @@ import java.util.Map;
 /**
  * 动态表单 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface BpmFormService {
 

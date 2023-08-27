@@ -11,7 +11,7 @@ import lombok.Getter;
 /**
  * 支付渠道的编码的枚举
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Getter
 @AllArgsConstructor

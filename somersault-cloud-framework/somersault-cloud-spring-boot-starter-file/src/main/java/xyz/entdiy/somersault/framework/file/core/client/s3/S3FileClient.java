@@ -16,7 +16,7 @@ import static xyz.entdiy.somersault.framework.file.core.client.s3.S3FileClientCo
  * <p>
  * S3 协议的客户端，采用亚马逊提供的 software.amazon.awssdk.s3 库
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class S3FileClient extends AbstractFileClient<S3FileClientConfig> {
 

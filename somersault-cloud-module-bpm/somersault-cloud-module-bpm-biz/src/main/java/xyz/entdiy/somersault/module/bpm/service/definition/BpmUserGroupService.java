@@ -12,7 +12,7 @@ import xyz.entdiy.somersault.framework.common.pojo.PageResult;
 /**
  * 用户组 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface BpmUserGroupService {
 

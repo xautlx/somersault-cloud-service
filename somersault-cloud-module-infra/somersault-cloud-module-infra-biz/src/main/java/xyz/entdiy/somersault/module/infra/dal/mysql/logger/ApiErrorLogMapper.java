@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * API 错误日志 Mapper
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface ApiErrorLogMapper extends BaseMapperX<ApiErrorLogDO> {

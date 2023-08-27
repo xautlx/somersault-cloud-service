@@ -8,7 +8,7 @@ import java.sql.DriverManager;
 /**
  * JDBC 工具类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class JdbcUtils {
 

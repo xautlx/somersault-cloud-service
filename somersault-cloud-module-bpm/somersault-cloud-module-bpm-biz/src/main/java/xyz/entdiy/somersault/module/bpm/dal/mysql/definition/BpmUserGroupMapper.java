@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * 用户组 Mapper
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface BpmUserGroupMapper extends BaseMapperX<BpmUserGroupDO> {

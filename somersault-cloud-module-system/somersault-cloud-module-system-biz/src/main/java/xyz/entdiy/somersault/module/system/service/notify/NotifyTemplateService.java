@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * 站内信模版 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface NotifyTemplateService {
 

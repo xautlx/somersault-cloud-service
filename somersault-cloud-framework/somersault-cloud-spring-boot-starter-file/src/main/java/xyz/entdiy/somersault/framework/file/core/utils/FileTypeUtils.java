@@ -7,7 +7,7 @@ import org.apache.tika.Tika;
 /**
  * 文件类型 Utils
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class FileTypeUtils {
 

@@ -5,7 +5,7 @@ import xyz.entdiy.somersault.framework.common.pojo.PageParam;
 /**
  * {@link xyz.entdiy.somersault.framework.common.pojo.PageParam} 工具类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class PageUtils {
 

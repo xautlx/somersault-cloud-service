@@ -1,2 +1,2 @@
-xyz.entdiy.somersault.framework.dict.config.CloudDictRpcAutoConfiguration
-xyz.entdiy.somersault.framework.dict.config.CloudDictAutoConfiguration
+xyz.entdiy.somersault.framework.dict.config.BizDictRpcAutoConfiguration
+xyz.entdiy.somersault.framework.dict.config.BizDictAutoConfiguration

@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * 字典类型 Mapper
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface TestDemoMapper extends BaseMapperX<TestDemoDO> {

@@ -23,7 +23,7 @@ import static xyz.entdiy.somersault.module.infra.enums.ErrorCodeConstants.TEST_D
 /**
  * 字典类型 Service 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Service
 @Validated

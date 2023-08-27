@@ -1,6 +1,6 @@
 /**
  * 基于部门的数据权限规则
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 package xyz.entdiy.somersault.framework.datapermission.core.rule.dept;

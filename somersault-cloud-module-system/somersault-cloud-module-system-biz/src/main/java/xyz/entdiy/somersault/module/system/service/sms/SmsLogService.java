@@ -13,7 +13,7 @@ import java.util.Map;
 /**
  * 短信日志 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface SmsLogService {
 

@@ -22,7 +22,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * {@link GoViewProjectServiceImpl} 的单元测试类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Import(GoViewProjectServiceImpl.class)
 public class GoViewProjectServiceImplTest extends BaseDbUnitTest {

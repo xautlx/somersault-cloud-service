@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * 错误码的类型枚举
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @AllArgsConstructor
 @Getter

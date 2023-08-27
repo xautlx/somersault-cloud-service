@@ -9,7 +9,7 @@ import java.util.List;
  *
  * copy from somersault-cloud-spring-boot-starter-security 的 LoginUser 类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 public class LoginUser {

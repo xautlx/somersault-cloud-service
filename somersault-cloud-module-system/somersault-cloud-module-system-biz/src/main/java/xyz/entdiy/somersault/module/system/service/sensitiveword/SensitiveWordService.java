@@ -14,7 +14,7 @@ import java.util.Set;
 /**
  * 敏感词 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface SensitiveWordService {
 

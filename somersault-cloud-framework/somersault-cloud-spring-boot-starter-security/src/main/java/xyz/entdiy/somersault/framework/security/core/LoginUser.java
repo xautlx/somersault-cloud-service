@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * 登录用户信息
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 public class LoginUser {

@@ -13,8 +13,8 @@ import xyz.entdiy.somersault.framework.mybatis.core.dataobject.BaseDO;
  *
  * {@link #day} 请假天数，目前先简单做。一般是分成请假上午和下午，可以是 1 整天，可以是 0.5 半天
  *
- * @author entdiy.xyz
- * @author entdiy.xyz
+ * @author theMonkeyKing
+ * @author theMonkeyKing
  */
 @TableName("bpm_oa_leave")
 @Data

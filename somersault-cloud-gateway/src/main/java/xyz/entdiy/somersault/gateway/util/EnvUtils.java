@@ -13,7 +13,7 @@ import java.util.Objects;
  *
  * copy from somersault-cloud-spring-boot-starter-env 的 EnvUtils 类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class EnvUtils {
 

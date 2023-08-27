@@ -26,7 +26,7 @@ import java.util.Map;
 /**
  * 流程实例 Convert
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface BpmProcessInstanceConvert {

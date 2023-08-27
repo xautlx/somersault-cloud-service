@@ -1,2 +1,2 @@
-xyz.entdiy.somersault.framework.operatelog.config.CloudOperateLogRpcAutoConfiguration
-xyz.entdiy.somersault.framework.operatelog.config.CloudOperateLogAutoConfiguration
+xyz.entdiy.somersault.framework.operatelog.config.BizOperateLogRpcAutoConfiguration
+xyz.entdiy.somersault.framework.operatelog.config.BizOperateLogAutoConfiguration

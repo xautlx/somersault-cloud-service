@@ -12,7 +12,7 @@ import org.springframework.aop.support.annotation.AnnotationMatchingPointcut;
 /**
  * {@link xyz.entdiy.somersault.framework.datapermission.core.annotation.DataPermission} 注解的 Advisor 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Getter
 @EqualsAndHashCode(callSuper = true)

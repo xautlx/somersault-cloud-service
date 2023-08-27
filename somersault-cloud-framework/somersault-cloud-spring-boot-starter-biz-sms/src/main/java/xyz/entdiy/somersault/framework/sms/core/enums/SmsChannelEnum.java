@@ -7,7 +7,7 @@ import lombok.Getter;
 /**
  * 短信渠道枚举
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  * @since 2021/1/25 10:56
  */
 @Getter

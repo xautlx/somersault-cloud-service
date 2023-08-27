@@ -19,9 +19,9 @@ import java.util.Set;
 /**
  * Flowable流程定义接口
  *
- * @author entdiy.xyz
- * @author entdiy.xyz
- * @author entdiy.xyz
+ * @author theMonkeyKing
+ * @author theMonkeyKing
+ * @author theMonkeyKing
  */
 public interface BpmProcessDefinitionService {
 

@@ -3,10 +3,7 @@ spring:
     nacos:
       discovery:
         server-addr: 192.168.1.200:8848
-        namespace: somersault-cloud-dev
-        # 全局默认为DEFAULT_GROUP，模板定义设置为local分组做区别
-        # 此处可以改成各自开发人员标识，从而各自开发互不干扰
-        group: local
       config:
         server-addr: 192.168.1.200:8848
-        namespace: somersault-cloud-dev
+        # 本地开发使用本地配置文件参数，不从Nacos获取配置
+        enabled: false

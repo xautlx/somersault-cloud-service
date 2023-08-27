@@ -5,7 +5,7 @@ import xyz.entdiy.somersault.module.report.controller.admin.goview.vo.data.GoVie
 /**
  * GoView 数据 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface GoViewDataService {
 

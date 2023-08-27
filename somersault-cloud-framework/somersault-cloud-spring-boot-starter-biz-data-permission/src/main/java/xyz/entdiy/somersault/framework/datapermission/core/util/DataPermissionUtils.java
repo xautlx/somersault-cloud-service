@@ -7,7 +7,7 @@ import lombok.SneakyThrows;
 /**
  * 数据权限 Util
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class DataPermissionUtils {
 

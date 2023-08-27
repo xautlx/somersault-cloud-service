@@ -3,7 +3,7 @@ package xyz.entdiy.somersault.framework.file.core.client;
 /**
  * 文件客户端
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface FileClient {
 

@@ -3,7 +3,7 @@ package xyz.entdiy.somersault.module.system.service.sms;
 import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.thread.ThreadUtil;
 import xyz.entdiy.somersault.framework.common.enums.UserTypeEnum;
-import xyz.entdiy.somersault.framework.sms.config.CloudSmsAutoConfiguration;
+import xyz.entdiy.somersault.framework.sms.config.BizSmsAutoConfiguration;
 import xyz.entdiy.somersault.module.system.test.BaseDbAndRedisIntegrationTest;
 import xyz.entdiy.somersault.module.system.mq.consumer.sms.SmsSendConsumer;
 import xyz.entdiy.somersault.module.system.mq.producer.sms.SmsProducer;
@@ -17,7 +17,7 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 // TODO 需要迁移
-@Import({CloudSmsAutoConfiguration.class,
+@Import({BizSmsAutoConfiguration.class,
         SmsChannelServiceImpl.class, SmsSendServiceImpl.class, SmsTemplateServiceImpl.class, SmsLogServiceImpl.class,
         SmsProducer.class, SmsSendConsumer.class})
 public class SmsServiceIntegrationTest extends BaseDbAndRedisIntegrationTest {

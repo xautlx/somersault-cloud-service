@@ -11,7 +11,7 @@ import javax.validation.constraints.Size;
 /**
  * 登录日志创建 Request DTO
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 public class LoginLogCreateReqDTO {

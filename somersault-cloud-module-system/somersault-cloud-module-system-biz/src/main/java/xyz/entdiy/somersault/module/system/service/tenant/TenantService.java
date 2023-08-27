@@ -17,7 +17,7 @@ import java.util.Set;
 /**
  * 租户 Service 接口
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface TenantService {
 

@@ -16,7 +16,7 @@ import java.util.Collections;
 /**
  * 安全服务工具类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class SecurityFrameworkUtils {
 

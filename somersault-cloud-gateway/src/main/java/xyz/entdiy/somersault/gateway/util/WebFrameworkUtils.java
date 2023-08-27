@@ -21,7 +21,7 @@ import reactor.core.publisher.Mono;
  *
  * copy from somersault-cloud-spring-boot-starter-web 的 WebFrameworkUtils 类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Slf4j
 public class WebFrameworkUtils {

@@ -3,7 +3,7 @@ package xyz.entdiy.somersault.framework.lock4j.core;
 /**
  * Lock4j Redis Key 枚举类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public interface Lock4jRedisKeyConstants {
 

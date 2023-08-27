@@ -1,2 +1,2 @@
-xyz.entdiy.somersault.framework.env.config.CloudEnvWebAutoConfiguration
-xyz.entdiy.somersault.framework.env.config.CloudEnvRpcAutoConfiguration
+xyz.entdiy.somersault.framework.env.config.BizEnvWebAutoConfiguration
+xyz.entdiy.somersault.framework.env.config.BizEnvRpcAutoConfiguration

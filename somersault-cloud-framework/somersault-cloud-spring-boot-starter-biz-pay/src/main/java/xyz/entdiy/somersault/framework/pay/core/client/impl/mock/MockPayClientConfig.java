@@ -8,7 +8,7 @@ import javax.validation.Validator;
 /**
  * 模拟支付的 PayClientConfig 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Data
 public class MockPayClientConfig implements PayClientConfig {

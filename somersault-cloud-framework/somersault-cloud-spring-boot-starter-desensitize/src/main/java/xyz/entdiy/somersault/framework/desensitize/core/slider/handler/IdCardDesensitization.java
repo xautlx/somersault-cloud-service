@@ -5,7 +5,7 @@ import xyz.entdiy.somersault.framework.desensitize.core.slider.annotation.IdCard
 /**
  * {@link IdCardDesensitize} 的脱敏处理器
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class IdCardDesensitization extends AbstractSliderDesensitizationHandler<IdCardDesensitize> {
     @Override

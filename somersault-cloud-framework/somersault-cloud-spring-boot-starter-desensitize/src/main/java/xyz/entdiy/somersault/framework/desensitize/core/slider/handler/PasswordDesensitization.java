@@ -5,7 +5,7 @@ import xyz.entdiy.somersault.framework.desensitize.core.slider.annotation.Passwo
 /**
  * {@link PasswordDesensitize} 的码脱敏处理器
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 public class PasswordDesensitization extends AbstractSliderDesensitizationHandler<PasswordDesensitize> {
     @Override

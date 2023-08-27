@@ -22,7 +22,7 @@ import static xyz.entdiy.somersault.framework.common.util.json.JsonUtils.toJsonS
  *
  * // TODO 未详细测试，因为手头没 App
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Slf4j
 public class WxAppPayClient extends AbstractWxPayClient {
@@ -53,7 +53,7 @@ public class WxAppPayClient extends AbstractWxPayClient {
         // 构建 WxPayUnifiedOrderV3Request 对象
         WxPayUnifiedOrderV3Request request = buildPayUnifiedOrderRequestV3(reqDTO);
         // 执行请求
-        WxPayUnifiedOrderV3Result.JsapiResult response = client.createOrderV3(TradeTypeEnum.APP, request);
+        WxPayUnifiedOrderV3Result.AppResult response = client.createOrderV3(TradeTypeEnum.APP, request);
 
         // 转换结果
         return PayOrderRespDTO.waitingOf(PayOrderDisplayModeEnum.APP.getMode(), toJsonString(response),

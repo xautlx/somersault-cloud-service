@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * 积木报表的配置类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Configuration(proxyBeanMethods = false)
 @ComponentScan(basePackages = "org.jeecg.modules.jmreport") // 扫描积木报表的包

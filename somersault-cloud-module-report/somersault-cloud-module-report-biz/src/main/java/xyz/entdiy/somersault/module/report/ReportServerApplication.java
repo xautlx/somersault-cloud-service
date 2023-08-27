@@ -6,16 +6,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * 项目的启动类
  *
-    *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @SpringBootApplication
 public class ReportServerApplication {
 
     public static void main(String[] args) {
-
         SpringApplication.run(ReportServerApplication.class, args);
-
     }
 
 }

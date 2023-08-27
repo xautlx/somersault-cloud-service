@@ -19,7 +19,7 @@ import static xyz.entdiy.somersault.module.system.enums.ErrorCodeConstants.NOTIF
 /**
  * 站内信发送 Service 实现类
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Service
 @Validated

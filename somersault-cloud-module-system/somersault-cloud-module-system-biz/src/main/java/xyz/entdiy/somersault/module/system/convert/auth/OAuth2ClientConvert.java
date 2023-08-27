@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * OAuth2 客户端 Convert
  *
- * @author entdiy.xyz
+ * @author theMonkeyKing
  */
 @Mapper
 public interface OAuth2ClientConvert {
