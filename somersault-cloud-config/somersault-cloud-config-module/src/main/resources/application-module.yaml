@@ -1,3 +1,18 @@
+server:
+  tomcat:
+    # tomcat的URI编码
+    uri-encoding: UTF-8
+    # tomcat最大线程数，默认为200
+    max-threads: 800
+    # Tomcat启动初始化的线程数，默认值25
+    min-spare-threads: 30
+  tongweb:
+    license:
+      type: file
+      path: /app/tongweb/license.dat
+    uri-encoding: utf-8
+    max-threads: 800
+
 spring:
   main:
     allow-circular-references: true # 允许循环依赖，因为项目是三层架构，无法避免这个情况。
@@ -144,6 +159,7 @@ mybatis-plus:
 logging:
   level:
     xyz.entdiy: INFO
+    com.alibaba.nacos: WARN
     root: INFO
 
 --- #################### 框架相关配置 ####################

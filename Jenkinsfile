@@ -36,6 +36,9 @@ pipeline {
            booleanParam name:"hosts_multiple_update",
                         defaultValue: false,
                         description:"默认开发主机更新部署以外是否测试集群环境更新？"
+
+           choice       name: 'web_container_profile',
+                        choices: ['tomcat', 'tongweb']
      }
 
     environment {
@@ -51,14 +54,26 @@ pipeline {
             }
         }
 
+        stage ("tongweb jar install") {
+            when{
+                equals actual: "${params.web_container_profile}" ,expected:"tongweb"
+            }
+            steps{
+                sh "chmod +x somersault-cloud-dependencies/tongweb/installMavenJar.sh"
+                sh "cd ./somersault-cloud-dependencies/tongweb && ./installMavenJar.sh"
+            }
+        }
+
         stage ("maven install") {
             when{
                 equals actual: "${params.maven_build}" ,expected:"true"
             }
             steps{
-                sh "mvn clean install -DskipTests -f pom.xml"
+                sh "mvn clean install -DskipTests -P${params.web_container_profile} -f pom.xml"
             }
         }
+
+
 
         stage ("maven site") {
             when{

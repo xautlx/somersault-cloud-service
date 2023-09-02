@@ -28,16 +28,6 @@
         <!-- 业务组件 -->
         <dependency>
             <groupId>xyz.entdiy</groupId>
-            <artifactId>somersault-cloud-spring-boot-starter-banner</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springdoc</groupId>
-                    <artifactId>springdoc-openapi-webmvc-core</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>xyz.entdiy</groupId>
             <artifactId>somersault-cloud-module-system-api</artifactId>
             <version>1.0.0-snapshot</version>
             <exclusions>
