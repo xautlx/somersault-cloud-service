@@ -87,14 +87,6 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- 东方通Tonweb -->
-            <dependency>
-                <groupId>com.tongweb</groupId>
-                <artifactId>tongweb-embed-dependencies</artifactId>
-                <version>${tongweb.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
             <!-- 统一依赖管理 -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
