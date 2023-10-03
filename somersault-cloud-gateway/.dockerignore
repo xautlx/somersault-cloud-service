@@ -1,2 +1,3 @@
 *
+!target/classes/git.properties
 !target/*.jar
